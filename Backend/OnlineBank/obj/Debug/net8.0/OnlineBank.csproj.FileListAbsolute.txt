@@ -1,0 +1,537 @@
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\appsettings.json
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.exe
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.deps.json
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.runtimeconfig.json
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.pdb
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Humanizer.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\BussinessLayer.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\ModelLayer.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\RepositoryLayer.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\BussinessLayer.pdb
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\ModelLayer.pdb
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\RepositoryLayer.pdb
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.AssemblyReference.cache
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfoInputs.cache
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfo.cs
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.CoreCompileInputs.cache
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.OnlineBank.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.build.OnlineBank.props
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OnlineBank.props
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OnlineBank.props
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\scopedcss\bundle\OnlineBank.styles.css
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.Up2Date
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\refint\OnlineBank.dll
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.pdb
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.genruntimeconfig.cache
+C:\Users\YPARIHAR\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\ref\OnlineBank.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\appsettings.json
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.exe
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.deps.json
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.runtimeconfig.json
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.pdb
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Humanizer.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\BussinessLayer.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\ModelLayer.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\RepositoryLayer.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\BussinessLayer.pdb
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\ModelLayer.pdb
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\bin\Debug\net8.0\RepositoryLayer.pdb
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.AssemblyReference.cache
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfoInputs.cache
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfo.cs
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.CoreCompileInputs.cache
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.OnlineBank.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.build.OnlineBank.props
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OnlineBank.props
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OnlineBank.props
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\scopedcss\bundle\OnlineBank.styles.css
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.Up2Date
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\refint\OnlineBank.dll
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.pdb
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.genruntimeconfig.cache
+C:\Users\VANSONI\Downloads\OnlineBanks\OnlineBanks\OnlineBank\obj\Debug\net8.0\ref\OnlineBank.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.AssemblyReference.cache
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfoInputs.cache
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfo.cs
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.CoreCompileInputs.cache
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\appsettings.json
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.exe
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.deps.json
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.runtimeconfig.json
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\OnlineBank.pdb
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Humanizer.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\Twilio.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\BussinessLayer.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\ModelLayer.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\RepositoryLayer.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\BussinessLayer.pdb
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\ModelLayer.pdb
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\bin\Debug\net8.0\RepositoryLayer.pdb
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.OnlineBank.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.build.OnlineBank.props
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OnlineBank.props
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OnlineBank.props
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\scopedcss\bundle\OnlineBank.styles.css
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.Up2Date
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\refint\OnlineBank.dll
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.pdb
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\OnlineBank.genruntimeconfig.cache
+C:\Users\VANSONI\Desktop\OnlineBanks\OnlineBank\obj\Debug\net8.0\ref\OnlineBank.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\appsettings.json
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\OnlineBank.exe
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\OnlineBank.deps.json
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\OnlineBank.runtimeconfig.json
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\OnlineBank.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\OnlineBank.pdb
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Humanizer.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\Twilio.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\BussinessLayer.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\ModelLayer.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\RepositoryLayer.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\BussinessLayer.pdb
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\ModelLayer.pdb
+C:\Users\VANSONI\Desktop\obj\OnlineBank\bin\Debug\net8.0\RepositoryLayer.pdb
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.AssemblyReference.cache
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\OnlineBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfoInputs.cache
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfo.cs
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.CoreCompileInputs.cache
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.OnlineBank.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.build.OnlineBank.props
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OnlineBank.props
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OnlineBank.props
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\scopedcss\bundle\OnlineBank.styles.css
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.Up2Date
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\OnlineBank.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\refint\OnlineBank.dll
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\OnlineBank.pdb
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\OnlineBank.genruntimeconfig.cache
+C:\Users\VANSONI\Desktop\obj\OnlineBank\obj\Debug\net8.0\ref\OnlineBank.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\appsettings.Development.json
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\appsettings.json
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\OnlineBank.exe
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\OnlineBank.deps.json
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\OnlineBank.runtimeconfig.json
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\OnlineBank.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\OnlineBank.pdb
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\BCrypt.Net-Next.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Humanizer.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.OpenApi.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Newtonsoft.Json.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\System.Drawing.Common.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\System.Runtime.Caching.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\System.Security.Permissions.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\System.Windows.Extensions.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\Twilio.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\BussinessLayer.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\ModelLayer.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\RepositoryLayer.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\BussinessLayer.pdb
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\ModelLayer.pdb
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\bin\Debug\net8.0\RepositoryLayer.pdb
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.AssemblyReference.cache
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\OnlineBank.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfoInputs.cache
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfo.cs
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.CoreCompileInputs.cache
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cs
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\staticwebassets.build.json
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\staticwebassets.development.json
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.OnlineBank.Microsoft.AspNetCore.StaticWebAssets.props
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.build.OnlineBank.props
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OnlineBank.props
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OnlineBank.props
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\staticwebassets.pack.json
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\scopedcss\bundle\OnlineBank.styles.css
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.Up2Date
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\OnlineBank.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\refint\OnlineBank.dll
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\OnlineBank.pdb
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\OnlineBank.genruntimeconfig.cache
+c:\Users\VANSONI\Desktop\obj - Copy (3)\OnlineBank\obj\Debug\net8.0\ref\OnlineBank.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\appsettings.Development.json
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\appsettings.json
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\OnlineBank.exe
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\OnlineBank.deps.json
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\OnlineBank.runtimeconfig.json
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\OnlineBank.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\OnlineBank.pdb
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\BCrypt.Net-Next.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Humanizer.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.OpenApi.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Newtonsoft.Json.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.Drawing.Common.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.Runtime.Caching.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.Security.Permissions.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.Windows.Extensions.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Twilio.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\BussinessLayer.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\ModelLayer.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\RepositoryLayer.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\BussinessLayer.pdb
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\ModelLayer.pdb
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\RepositoryLayer.pdb
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.AssemblyReference.cache
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfoInputs.cache
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfo.cs
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.CoreCompileInputs.cache
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cs
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\staticwebassets.build.json
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\staticwebassets.development.json
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.OnlineBank.Microsoft.AspNetCore.StaticWebAssets.props
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.build.OnlineBank.props
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OnlineBank.props
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OnlineBank.props
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\staticwebassets.pack.json
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\scopedcss\bundle\OnlineBank.styles.css
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.Up2Date
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\refint\OnlineBank.dll
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.pdb
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.genruntimeconfig.cache
+c:\Users\VANSONI\Desktop\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\ref\OnlineBank.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\appsettings.json
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\OnlineBank.staticwebassets.endpoints.json
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\OnlineBank.exe
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\OnlineBank.deps.json
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\OnlineBank.runtimeconfig.json
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\OnlineBank.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\OnlineBank.pdb
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Humanizer.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\Twilio.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\BussinessLayer.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\ModelLayer.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\RepositoryLayer.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\BussinessLayer.pdb
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\ModelLayer.pdb
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\bin\Debug\net8.0\RepositoryLayer.pdb
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.AssemblyReference.cache
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfoInputs.cache
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.AssemblyInfo.cs
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.CoreCompileInputs.cache
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\scopedcss\bundle\OnlineBank.styles.css
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.csproj.Up2Date
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\refint\OnlineBank.dll
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.pdb
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\OnlineBank.genruntimeconfig.cache
+C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\OnlineBank\obj\Debug\net8.0\ref\OnlineBank.dll

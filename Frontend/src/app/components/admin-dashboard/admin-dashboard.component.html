@@ -1,0 +1,64 @@
+<div class="p-6 bg-gray-100 min-h-screen">
+  <h2 class="text-2xl font-bold text-blue-800 mb-4">Pending Account Requests</h2>
+
+  <p *ngIf="message" class="text-red-500 mb-4">{{ message }}</p>
+
+  <div class="overflow-x-auto bg-white shadow-md rounded-lg">
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead class="bg-blue-800 text-white">
+        <tr>
+          <th class="px-4 py-2 text-left">Request ID</th>
+          <th class="px-4 py-2 text-left">Name</th>
+          <th class="px-4 py-2 text-left">Email</th>
+          <th class="px-4 py-2 text-left">Mobile</th>
+          <th class="px-4 py-2 text-left">Aadhar</th>
+          <th class="px-4 py-2 text-left">Residential Address</th>
+          <th class="px-4 py-2 text-left">Permanent Address</th>
+          <th class="px-4 py-2 text-left">Occupation</th>
+          <th class="px-4 py-2 text-left">Type</th>
+          <th class="px-4 py-2 text-left">Balance</th>
+          <th class="px-4 py-2 text-left">NetBanking</th>
+          <th class="px-4 py-2 text-left">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white divide-y divide-gray-100">
+        <tr *ngFor="let acc of pendingAccounts">
+          <td class="px-4 py-2">{{ acc.requestId }}</td>
+          <td class="px-4 py-2">{{ acc.name }}</td>
+          <td class="px-4 py-2">{{ acc.email }}</td>
+          <td class="px-4 py-2">{{ acc.mobileNumber }}</td>
+          <td class="px-4 py-2">{{ acc.aadharCardNumber }}</td>
+          <td class="px-4 py-2">{{ acc.residentialAddress }}</td>
+          <td class="px-4 py-2">{{ acc.permanentAddress }}</td>
+          <td class="px-4 py-2">{{ acc.occupationDetails }}</td>
+          <td class="px-4 py-2">{{ acc.accountType }}</td>
+          <td class="px-4 py-2">{{ acc.balance }}</td>
+          <td class="px-4 py-2">
+            <span [ngClass]="{
+              'text-green-600 font-semibold': acc.isNetBankingEnabled,
+              'text-red-600 font-semibold': !acc.isNetBankingEnabled
+            }">
+              {{ acc.isNetBankingEnabled ? 'Enabled' : 'Disabled' }}
+            </span>
+          </td>
+          <td class="px-4 py-2 space-x-2">
+            <button
+              class="bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700 transition"
+              (click)="approve(acc.requestId)">
+              Approve
+            </button>
+            <button
+              class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 transition"
+              (click)="reject(acc.requestId)">
+              Reject
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p *ngIf="pendingAccounts.length === 0" class="mt-4 text-gray-600 text-center">
+    No pending requests.
+  </p>
+</div>

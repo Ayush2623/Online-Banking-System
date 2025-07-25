@@ -1,0 +1,59 @@
+<nav *ngIf="isLoggedIn()" class="bg-gray-800 text-white">
+  <div class="container mx-auto flex items-center justify-between p-4 flex-wrap">
+    <!-- Logo -->
+    <div class="text-xl font-bold">Online Banking System</div>
+
+    <!-- Mobile Menu Button -->
+
+    <!-- Navigation Links -->
+    <ul 
+      [ngClass]="{
+        'flex flex-col w-full mt-4 md:mt-0 md:flex-row md:w-auto md:items-center md:gap-4': true
+
+      }"
+      class="text-sm"
+    >
+      <!-- Admin Links -->
+      <ng-container *ngIf="isAdmin()">
+        <li>
+          <a routerLink="/adminDashboard" routerLinkActive="underline font-semibold" class="hover:underline">
+            Admin Dashboard
+          </a>
+        </li>
+      </ng-container>
+
+      <!-- User Links -->
+      <ng-container *ngIf="isUser()">
+        <li>
+          <a routerLink="/userDashboard" routerLinkActive="underline font-semibold" class="hover:underline">
+            User Dashboard
+          </a>
+        </li>
+        <li>
+          <a routerLink="/accountSummary" routerLinkActive="underline font-semibold" class="hover:underline">
+            Account Summary
+          </a>
+        </li>
+        <li>
+          <a routerLink="/accountDetails" routerLinkActive="underline font-semibold" class="hover:underline">
+            Account Details
+          </a>
+        </li>
+        <li>
+          <a routerLink="/accountStatement" routerLinkActive="underline font-semibold" class="hover:underline">
+            Account Statement
+          </a>
+        </li>
+      </ng-container>
+
+      <!-- Logout -->
+      <li>
+        <button 
+          (click)="logout()" 
+          class="bg-red-500 px-3 py-1 rounded hover:bg-red-600">
+          Logout
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>

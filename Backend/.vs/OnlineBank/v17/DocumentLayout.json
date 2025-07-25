@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3CF70EA2-B301-496D-8CEF-C33EC6D28DCC}|OnlineBank\\OnlineBank.csproj|c:\\users\\tiwar\\downloads\\casestudy-main\\onlinebankingsystem\\onlinebank\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CF70EA2-B301-496D-8CEF-C33EC6D28DCC}|OnlineBank\\OnlineBank.csproj|solutionrelative:onlinebank\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDCF4291-CF52-4690-9AD0-BC345C7CEE52}|BussinessLayer\\BussinessLayer.csproj|c:\\users\\tiwar\\downloads\\casestudy-main\\onlinebankingsystem\\bussinesslayer\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDCF4291-CF52-4690-9AD0-BC345C7CEE52}|BussinessLayer\\BussinessLayer.csproj|solutionrelative:bussinesslayer\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDCF4291-CF52-4690-9AD0-BC345C7CEE52}|BussinessLayer\\BussinessLayer.csproj|c:\\users\\tiwar\\downloads\\casestudy-main\\onlinebankingsystem\\bussinesslayer\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDCF4291-CF52-4690-9AD0-BC345C7CEE52}|BussinessLayer\\BussinessLayer.csproj|solutionrelative:bussinesslayer\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDCF4291-CF52-4690-9AD0-BC345C7CEE52}|BussinessLayer\\BussinessLayer.csproj|c:\\users\\tiwar\\downloads\\casestudy-main\\onlinebankingsystem\\bussinesslayer\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDCF4291-CF52-4690-9AD0-BC345C7CEE52}|BussinessLayer\\BussinessLayer.csproj|solutionrelative:bussinesslayer\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CF70EA2-B301-496D-8CEF-C33EC6D28DCC}|OnlineBank\\OnlineBank.csproj|c:\\users\\tiwar\\downloads\\casestudy-main\\onlinebankingsystem\\onlinebank\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CF70EA2-B301-496D-8CEF-C33EC6D28DCC}|OnlineBank\\OnlineBank.csproj|solutionrelative:onlinebank\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDCF4291-CF52-4690-9AD0-BC345C7CEE52}|BussinessLayer\\BussinessLayer.csproj|c:\\users\\tiwar\\downloads\\casestudy-main\\onlinebankingsystem\\bussinesslayer\\interfaces\\idahboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDCF4291-CF52-4690-9AD0-BC345C7CEE52}|BussinessLayer\\BussinessLayer.csproj|solutionrelative:bussinesslayer\\interfaces\\idahboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2718FB-A29C-4E01-BC41-707666AA37A4}|TestProject1\\TestProject1.csproj|c:\\users\\tiwar\\downloads\\casestudy-main\\onlinebankingsystem\\testproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2718FB-A29C-4E01-BC41-707666AA37A4}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32A06209-C9F5-4AD8-B49B-C3B0B054B65E}|ModelLayer\\ModelLayer.csproj|c:\\users\\tiwar\\downloads\\casestudy-main\\onlinebankingsystem\\modellayer\\dtos\\pendingaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32A06209-C9F5-4AD8-B49B-C3B0B054B65E}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\dtos\\pendingaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CF70EA2-B301-496D-8CEF-C33EC6D28DCC}|OnlineBank\\OnlineBank.csproj|c:\\users\\tiwar\\downloads\\casestudy-main\\onlinebankingsystem\\onlinebank\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CF70EA2-B301-496D-8CEF-C33EC6D28DCC}|OnlineBank\\OnlineBank.csproj|solutionrelative:onlinebank\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CF70EA2-B301-496D-8CEF-C33EC6D28DCC}|OnlineBank\\OnlineBank.csproj|c:\\users\\tiwar\\downloads\\casestudy-main\\onlinebankingsystem\\onlinebank\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CF70EA2-B301-496D-8CEF-C33EC6D28DCC}|OnlineBank\\OnlineBank.csproj|solutionrelative:onlinebank\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\BussinessLayer\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "BussinessLayer\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\BussinessLayer\\Services\\AccountService.cs",
+              "RelativeToolTip": "BussinessLayer\\Services\\AccountService.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAuwJIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:15:01.246Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\BussinessLayer\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "BussinessLayer\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\BussinessLayer\\Services\\AuthService.cs",
+              "RelativeToolTip": "BussinessLayer\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:53:57.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DashboardService.cs",
+              "DocumentMoniker": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\BussinessLayer\\Services\\DashboardService.cs",
+              "RelativeDocumentMoniker": "BussinessLayer\\Services\\DashboardService.cs",
+              "ToolTip": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\BussinessLayer\\Services\\DashboardService.cs",
+              "RelativeToolTip": "BussinessLayer\\Services\\DashboardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:50:26.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IDahboardService.cs",
+              "DocumentMoniker": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\BussinessLayer\\Interfaces\\IDahboardService.cs",
+              "RelativeDocumentMoniker": "BussinessLayer\\Interfaces\\IDahboardService.cs",
+              "ToolTip": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\BussinessLayer\\Interfaces\\IDahboardService.cs",
+              "RelativeToolTip": "BussinessLayer\\Interfaces\\IDahboardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:49:13.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\OnlineBank\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "OnlineBank\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\OnlineBank\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "OnlineBank\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAawBUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T13:48:40.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PendingAccountDTO.cs",
+              "DocumentMoniker": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\ModelLayer\\DTOs\\PendingAccountDTO.cs",
+              "RelativeDocumentMoniker": "ModelLayer\\DTOs\\PendingAccountDTO.cs",
+              "ToolTip": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\ModelLayer\\DTOs\\PendingAccountDTO.cs",
+              "RelativeToolTip": "ModelLayer\\DTOs\\PendingAccountDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T19:12:25.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\TestProject1\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "TestProject1\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\TestProject1\\UnitTest1.cs",
+              "RelativeToolTip": "TestProject1\\UnitTest1.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAD4vyYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T19:11:26.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\OnlineBank\\Program.cs",
+              "RelativeDocumentMoniker": "OnlineBank\\Program.cs",
+              "ToolTip": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\OnlineBank\\Program.cs",
+              "RelativeToolTip": "OnlineBank\\Program.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAkwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:41:10.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\OnlineBank\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "OnlineBank\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\OnlineBank\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "OnlineBank\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:34:07.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\OnlineBank\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "OnlineBank\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\OnlineBank\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "OnlineBank\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:34:04.089Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
