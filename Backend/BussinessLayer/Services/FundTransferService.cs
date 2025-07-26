@@ -18,18 +18,24 @@ public class FundTransferService : IFundTransferService
 
         public async Task<bool> AddPayeeAsync(PayeeDTO payee)
         {
-            // var payeeModel = new Payee
-            // {
-            //     UserId = payee.UserId,
-            //     PayeeName = payee.PayeeName,
-            //     PayeeAccountNumber = payee.PayeeAccountNumber,
-            //     Nickname = payee.Nickname                
-            // };
-            return await _fundTransferRepository.AddPayeeAsync(payee);
+            var payeeModel = new Payee
+            {
+                PayeeName = payee.PayeeName,
+                PayeeAccountNumber = payee.PayeeAccountNumber,
+                AccountNumber = payee.AccountNumber, // User's account who's adding this payee
+                Nickname = payee.Nickname,
+                CreatedAt = DateTime.Now
+            };
+            return await _fundTransferRepository.AddPayeeAsync(payeeModel);
         }
 
         public async Task<bool> TransferFundsAsync(FundTransferRequest request)
         {
             return await _fundTransferRepository.TransferFundsAsync(request);
+        }
+
+        public async Task<List<Payee>> GetPayeesByAccountNumberAsync(long accountNumber)
+        {
+            return await _fundTransferRepository.GetPayeesByAccountNumberAsync(accountNumber);
         }
     }

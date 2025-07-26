@@ -1,32 +1,165 @@
-<div class="min-h-screen flex items-center justify-center background-img">
-  <div class="bg-white shadow-md rounded-lg p-12 w-full max-w-md">
-    <h2 class="text-2xl font-bold mb-6 text-center text-blue-700">Login</h2>
+<div class="min-h-screen flex items-center justify-center login-background py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+  <!-- Floating Elements Background -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="floating-element absolute top-20 left-10 w-32 h-32 bg-blue-400 opacity-10 rounded-full animate-float"></div>
+    <div class="floating-element absolute top-40 right-20 w-24 h-24 bg-purple-400 opacity-10 rounded-full animate-float-delayed"></div>
+    <div class="floating-element absolute bottom-20 left-20 w-20 h-20 bg-indigo-400 opacity-10 rounded-full animate-float-slow"></div>
+    <div class="floating-element absolute bottom-40 right-10 w-28 h-28 bg-blue-300 opacity-10 rounded-full animate-float-fast"></div>
+  </div>
 
-    <div *ngIf="error" class="mb-4 text-red-500 text-sm text-center">
-      {{ error }}
-    </div>
-
-    <form (ngSubmit)="login()" class="space-y-4">
-      <input type="text" [(ngModel)]="credentials.username" name="username" placeholder="Username"
-             class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
-
-      <input type="password" [(ngModel)]="credentials.password" name="password" placeholder="Password"
-             class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
-
-      <button type="submit"
-              class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-        Login
-      </button>
-    </form>
-
-    <div class="mt-4 text-center text-sm space-y-1">
-      <div>
-        <a routerLink="/forgot-username" class="text-blue-600 hover:underline">Forgot Username?</a> |
-        <a routerLink="/forgot-password" class="text-blue-600 hover:underline">Forgot Password?</a>
+  <div class="max-w-md w-full space-y-8 relative z-10">
+    <div class="login-card bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 p-8 animate-slide-up">
+      <!-- Header with Enhanced Animation -->
+      <div class="text-center mb-8 animate-fade-in-down">
+        <div class="mx-auto h-20 w-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 animate-bounce-in shadow-lg">
+          <svg class="h-10 w-10 text-white animate-pulse-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+          </svg>
+        </div>
+        <h1 class="text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent mb-3 animate-text-shimmer">
+          SecureBank Pro
+        </h1>
+        <p class="text-gray-600 text-lg font-medium">Welcome back to your secure banking</p>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-4 rounded-full animate-expand"></div>
       </div>
-      <div>
-        <span class="text-gray-600">Don't have an account?</span>
-        <a routerLink="/register" class="text-blue-600 hover:underline ml-1">Create New Account</a>
+
+      <!-- Success Message -->
+      <div *ngIf="successMessage" class="alert alert-success mb-6 animate-slide-in-left">
+        <div class="flex items-center">
+          <svg class="h-5 w-5 text-green-600 mr-2 animate-check" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          {{ successMessage }}
+        </div>
+      </div>
+
+      <!-- Error Message -->
+      <div *ngIf="error" class="alert alert-error mb-6 animate-shake">
+        <div class="flex items-center">
+          <svg class="h-5 w-5 text-red-600 mr-2 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+          </svg>
+          {{ error }}
+        </div>
+      </div>
+
+      <!-- Login Form -->
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="space-y-6 animate-fade-in-up">
+        <!-- Username Field -->
+        <div class="form-group animate-slide-in-right" style="animation-delay: 0.1s">
+          <label for="username" class="form-label-modern">Username</label>
+          <div class="input-container group">
+            <input 
+              type="text" 
+              id="username"
+              formControlName="username"
+              class="form-input-modern"
+              [class.border-red-500]="getFieldError('username')"
+              [class.border-blue-400]="!getFieldError('username') && loginForm.get('username')?.value"
+              placeholder="Enter your username"
+              autocomplete="username">
+            <div class="input-icon">
+              <svg class="h-5 w-5 text-gray-400 group-focus-within:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+              </svg>
+            </div>
+          </div>
+          <p *ngIf="getFieldError('username')" class="error-message animate-slide-in-left">{{ getFieldError('username') }}</p>
+        </div>
+
+        <!-- Password Field -->
+        <div class="form-group animate-slide-in-right" style="animation-delay: 0.2s">
+          <label for="password" class="form-label-modern">Password</label>
+          <div class="input-container group">
+            <input 
+              [type]="showPassword ? 'text' : 'password'"
+              id="password"
+              formControlName="password"
+              class="form-input-modern"
+              [class.border-red-500]="getFieldError('password')"
+              [class.border-blue-400]="!getFieldError('password') && loginForm.get('password')?.value"
+              placeholder="Enter your password"
+              autocomplete="current-password">
+            <div class="input-icon">
+              <svg class="h-5 w-5 text-gray-400 group-focus-within:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+              </svg>
+            </div>
+            <button 
+              type="button"
+              (click)="togglePasswordVisibility()"
+              class="password-toggle-btn">
+              <svg *ngIf="!showPassword" class="h-5 w-5 text-gray-400 hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+              </svg>
+              <svg *ngIf="showPassword" class="h-5 w-5 text-gray-400 hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.878 9.878L3 3m6.878 6.878L21 21"></path>
+              </svg>
+            </button>
+          </div>
+          <p *ngIf="getFieldError('password')" class="error-message animate-slide-in-left">{{ getFieldError('password') }}</p>
+        </div>
+
+        <!-- Login Button -->
+        <div class="animate-slide-in-up" style="animation-delay: 0.3s">
+          <button 
+            type="submit" 
+            [disabled]="isLoading || isLocked"
+            class="login-btn-modern group">
+            <div *ngIf="isLoading" class="spinner-modern mr-3"></div>
+            <svg *ngIf="!isLoading" class="h-5 w-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+            </svg>
+            <span *ngIf="!isLoading">Sign In Securely</span>
+            <span *ngIf="isLoading">Authenticating...</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- Links -->
+      <div class="mt-8 text-center space-y-4 animate-fade-in" style="animation-delay: 0.4s">
+        <div class="flex flex-col sm:flex-row sm:justify-between text-sm space-y-2 sm:space-y-0">
+          <a routerLink="/forgot-username" class="modern-link group">
+            <svg class="h-4 w-4 mr-1 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            Forgot Username?
+          </a>
+          <a routerLink="/forgot-password" class="modern-link group">
+            <svg class="h-4 w-4 mr-1 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m-2-2a2 2 0 00-2 2m2-2h2a2 2 0 012 2v0a2 2 0 01-2 2h-2m-2-4H9a2 2 0 00-2 2v0a2 2 0 002 2h2m4-4v4"></path>
+            </svg>
+            Forgot Password?
+          </a>
+        </div>
+        
+        <div class="border-t border-gray-200 pt-4">
+          <p class="text-gray-600 text-sm">
+            Don't have an account? 
+            <a routerLink="/register" class="register-link ml-1 group">
+              <span class="group-hover:scale-105 transition-transform inline-block">Create New Account</span>
+              <svg class="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Security Notice -->
+      <div class="mt-6 security-notice animate-fade-in" style="animation-delay: 0.5s">
+        <div class="flex items-start">
+          <div class="security-icon">
+            <svg class="h-5 w-5 text-blue-600 animate-pulse-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <div class="text-sm text-blue-800">
+            <p class="font-semibold mb-1">🔒 Bank-Level Security</p>
+            <p>Your data is protected with 256-bit encryption. We never store your password in plain text.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

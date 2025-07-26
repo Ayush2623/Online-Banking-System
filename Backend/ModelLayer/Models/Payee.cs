@@ -9,13 +9,12 @@ namespace ModelLayer.Models
         [Key] // Primary Key
         public int PayeeId { get; set; }
 
-        [ForeignKey("AccountNumber")] // Foreign Key referencing Auth table
-        public  long PayeeAccountNumber { get; set; }
-        public Account AccountNumber { get; set; }
-
-// [ForeignKey("FromAccount")] // Foreign Key referencing Account table
-//         public long FromAccountNumber { get; set; }
-//         public Account FromAccount { get; set; }
+        [Required]
+        public long PayeeAccountNumber { get; set; } // The payee's account number
+        
+        [ForeignKey("Account")] // Foreign Key referencing user's Account
+        public long AccountNumber { get; set; } // User's account who added this payee
+        public Account Account { get; set; }
 
         [Required]
         public string PayeeName { get; set; }      

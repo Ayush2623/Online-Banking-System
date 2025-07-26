@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\BussinessLayer\\BussinessLayer.csproj": {}
+    "C:\\Workspace\\Online-Banking-System\\Backend\\BussinessLayer\\BussinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\BussinessLayer\\BussinessLayer.csproj": {
+    "C:\\Workspace\\Online-Banking-System\\Backend\\BussinessLayer\\BussinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\BussinessLayer\\BussinessLayer.csproj",
+        "projectUniqueName": "C:\\Workspace\\Online-Banking-System\\Backend\\BussinessLayer\\BussinessLayer.csproj",
         "projectName": "BussinessLayer",
-        "projectPath": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\BussinessLayer\\BussinessLayer.csproj",
+        "projectPath": "C:\\Workspace\\Online-Banking-System\\Backend\\BussinessLayer\\BussinessLayer.csproj",
         "packagesPath": "C:\\Users\\tiwar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\BussinessLayer\\obj\\",
+        "outputPath": "C:\\Workspace\\Online-Banking-System\\Backend\\BussinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\ModelLayer\\ModelLayer.csproj": {
-                "projectPath": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\ModelLayer\\ModelLayer.csproj"
+              "C:\\Workspace\\Online-Banking-System\\Backend\\ModelLayer\\ModelLayer.csproj": {
+                "projectPath": "C:\\Workspace\\Online-Banking-System\\Backend\\ModelLayer\\ModelLayer.csproj"
               },
-              "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\RepositoryLayer\\RepositoryLayer.csproj": {
-                "projectPath": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\RepositoryLayer\\RepositoryLayer.csproj"
+              "C:\\Workspace\\Online-Banking-System\\Backend\\RepositoryLayer\\RepositoryLayer.csproj": {
+                "projectPath": "C:\\Workspace\\Online-Banking-System\\Backend\\RepositoryLayer\\RepositoryLayer.csproj"
               }
             }
           }
@@ -95,14 +95,14 @@
         }
       }
     },
-    "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\ModelLayer\\ModelLayer.csproj": {
+    "C:\\Workspace\\Online-Banking-System\\Backend\\ModelLayer\\ModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\ModelLayer\\ModelLayer.csproj",
+        "projectUniqueName": "C:\\Workspace\\Online-Banking-System\\Backend\\ModelLayer\\ModelLayer.csproj",
         "projectName": "ModelLayer",
-        "projectPath": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\ModelLayer\\ModelLayer.csproj",
+        "projectPath": "C:\\Workspace\\Online-Banking-System\\Backend\\ModelLayer\\ModelLayer.csproj",
         "packagesPath": "C:\\Users\\tiwar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\ModelLayer\\obj\\",
+        "outputPath": "C:\\Workspace\\Online-Banking-System\\Backend\\ModelLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -167,14 +167,14 @@
         }
       }
     },
-    "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\RepositoryLayer\\RepositoryLayer.csproj": {
+    "C:\\Workspace\\Online-Banking-System\\Backend\\RepositoryLayer\\RepositoryLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectUniqueName": "C:\\Workspace\\Online-Banking-System\\Backend\\RepositoryLayer\\RepositoryLayer.csproj",
         "projectName": "RepositoryLayer",
-        "projectPath": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectPath": "C:\\Workspace\\Online-Banking-System\\Backend\\RepositoryLayer\\RepositoryLayer.csproj",
         "packagesPath": "C:\\Users\\tiwar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\RepositoryLayer\\obj\\",
+        "outputPath": "C:\\Workspace\\Online-Banking-System\\Backend\\RepositoryLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -196,8 +196,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\ModelLayer\\ModelLayer.csproj": {
-                "projectPath": "C:\\Users\\tiwar\\Downloads\\caseStudy-main\\OnlineBankingSystem\\ModelLayer\\ModelLayer.csproj"
+              "C:\\Workspace\\Online-Banking-System\\Backend\\ModelLayer\\ModelLayer.csproj": {
+                "projectPath": "C:\\Workspace\\Online-Banking-System\\Backend\\ModelLayer\\ModelLayer.csproj"
               }
             }
           }

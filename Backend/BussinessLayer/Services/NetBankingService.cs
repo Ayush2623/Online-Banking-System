@@ -26,7 +26,9 @@ namespace BussinessLayer.Services
 
             if (!account.IsNetBankingEnabled)
             {
-                return "NetBanking is not enabled for this account.";
+                // Automatically enable NetBanking for the account
+                account.IsNetBankingEnabled = true;
+                await _netBankingRepository.UpdateAccountAsync(account);
             }
 
             // Create a NetBanking record

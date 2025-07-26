@@ -16,23 +16,23 @@ public class FundTransferRepository : IFundTransferRepository
             _context = context;
         }
 
-        public async Task<bool> AddPayeeAsync(PayeeDTO payee)
+        public async Task<bool> AddPayeeAsync(Payee payee)
         {
-            var Account = await _context.Accounts.FirstOrDefaultAsync(a => a.AccountNumber == payee.PayeeAccountNumber);
-            if (Account == null)
+            // Check if the payee account exists
+            var payeeAccount = await _context.Accounts.FirstOrDefaultAsync(a => a.AccountNumber == payee.PayeeAccountNumber);
+            if (payeeAccount == null)
             {
-                return false;
+                return false; // Payee account does not exist
             }
-            var payeeModel = new Payee
+            
+            // Check if user's account exists
+            var userAccount = await _context.Accounts.FirstOrDefaultAsync(a => a.AccountNumber == payee.AccountNumber);
+            if (userAccount == null)
             {
-                PayeeAccountNumber = payee.PayeeAccountNumber,
-                PayeeName = payee.PayeeName,
-                Nickname = payee.Nickname,
-                CreatedAt = System.DateTime.Now,
+                return false; // User's account does not exist
+            }
 
-            };
-
-            await _context.Payees.AddAsync(payeeModel);
+            await _context.Payees.AddAsync(payee);
             await _context.SaveChangesAsync();
             return true;
         }
@@ -66,6 +66,14 @@ public class FundTransferRepository : IFundTransferRepository
             await _context.SaveChangesAsync();
 
             return true;
+        }
+
+        public async Task<List<Payee>> GetPayeesByAccountNumberAsync(long accountNumber)
+        {
+            return await _context.Payees
+                .Where(p => p.AccountNumber == accountNumber)
+                .OrderBy(p => p.PayeeName)
+                .ToListAsync();
         }
     }
 

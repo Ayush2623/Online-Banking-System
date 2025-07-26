@@ -52,9 +52,9 @@ namespace RepositoryLayer
                 .OnDelete(DeleteBehavior.Restrict); // Disable cascading delete
 
             modelBuilder.Entity<Payee>()
-            .HasOne(p => p.AccountNumber) // Assuming AccountNumber is the navigation property in Payee
+            .HasOne(p => p.Account) // Reference the Account navigation property
             .WithMany()
-            .HasForeignKey(p => p.PayeeAccountNumber)
+            .HasForeignKey(p => p.AccountNumber) // Foreign key is AccountNumber field
             .HasPrincipalKey(a => a.AccountNumber)
             .OnDelete(DeleteBehavior.Restrict); // Disable cascading delete
             

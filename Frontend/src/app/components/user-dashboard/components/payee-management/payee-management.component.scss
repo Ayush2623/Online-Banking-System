@@ -1,0 +1,209 @@
+// Payee Management Component Styles
+.payee-management-container {
+  .add-payee-section {
+    .add-payee-button {
+      @apply w-full bg-blue-600 hover:bg-blue-700 text-white font-medium p-3 text-sm rounded-lg transition-colors duration-200;
+      transition: all 0.2s ease-in-out;
+      
+      &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      }
+    }
+    
+    .add-payee-form {
+      .form-group {
+        @apply space-y-4;
+        
+        .form-field {
+          .account-input {
+            @apply font-mono;
+            letter-spacing: 0.5px;
+          }
+          
+          .ifsc-input {
+            @apply font-mono uppercase;
+            letter-spacing: 1px;
+          }
+        }
+        
+        .submit-button {
+          @apply w-full bg-blue-600 hover:bg-blue-700 text-white font-medium p-3 text-sm rounded-lg transition-colors duration-200;
+          
+          &:disabled {
+            @apply opacity-50 cursor-not-allowed;
+          }
+          
+          .loading-spinner {
+            @apply animate-spin h-4 w-4 mr-2;
+          }
+        }
+      }
+    }
+  }
+  
+  .payees-list {
+    .payee-item {
+      @apply flex items-center justify-between p-6 hover:bg-gray-50 transition-colors;
+      border-bottom: 1px solid #f3f4f6;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      .payee-avatar {
+        @apply h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4;
+        
+        .avatar-icon {
+          @apply h-6 w-6 text-blue-600;
+        }
+      }
+      
+      .payee-info {
+        @apply flex-1;
+        
+        .payee-header {
+          @apply flex items-center justify-between mb-2;
+          
+          .payee-name {
+            @apply text-lg font-medium text-gray-900;
+          }
+          
+          .payee-actions {
+            @apply flex space-x-2;
+            
+            .action-button {
+              @apply p-1 rounded transition-colors;
+              
+              &.edit-button {
+                @apply text-blue-600 hover:text-blue-800 hover:bg-blue-50;
+              }
+              
+              &.delete-button {
+                @apply text-red-600 hover:text-red-800 hover:bg-red-50;
+              }
+            }
+          }
+        }
+        
+        .payee-details {
+          @apply grid grid-cols-2 gap-4 text-sm text-gray-600;
+          
+          .detail-item {
+            .detail-label {
+              @apply font-medium;
+            }
+            
+            .detail-value {
+              @apply ml-1;
+              
+              &.account-number,
+              &.ifsc-code {
+                @apply font-mono;
+                letter-spacing: 0.5px;
+              }
+            }
+          }
+          
+          .bank-detail {
+            @apply col-span-2;
+          }
+        }
+      }
+    }
+    
+    .empty-state {
+      @apply text-center py-12;
+      
+      .empty-icon-container {
+        @apply mx-auto h-24 w-24 bg-gray-100 rounded-full flex items-center justify-center mb-6;
+        
+        .empty-icon {
+          @apply h-12 w-12 text-gray-400;
+        }
+      }
+      
+      .empty-title {
+        @apply text-lg font-medium text-gray-900 mb-2;
+      }
+      
+      .empty-description {
+        @apply text-gray-600 mb-6 max-w-md mx-auto;
+      }
+      
+      .empty-action {
+        @apply bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 text-sm rounded-lg transition-colors duration-200;
+      }
+    }
+  }
+  
+  .info-panel {
+    @apply bg-blue-50 border border-blue-200 rounded-lg p-4;
+    
+    .info-content {
+      @apply flex items-start;
+      
+      .info-icon {
+        @apply h-5 w-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0;
+      }
+      
+      .info-text {
+        @apply text-sm text-blue-800;
+        
+        .info-title {
+          @apply font-medium mb-2;
+        }
+        
+        .info-list {
+          @apply list-disc list-inside space-y-1;
+        }
+      }
+    }
+  }
+}
+
+// Form validation styles
+.form-input {
+  &.border-red-500 {
+    border-color: #ef4444;
+    &:focus {
+      border-color: #ef4444;
+      ring-color: #ef4444;
+    }
+  }
+}
+
+.error-message {
+  @apply text-red-500 text-sm mt-1;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .payee-management-container {
+    .payees-list {
+      .payee-item {
+        .payee-info {
+          .payee-details {
+            @apply grid-cols-1 gap-2;
+            
+            .bank-detail {
+              @apply col-span-1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Animation for form toggle
+.payee-form-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.2s ease-in-out;
+}
+
+.payee-form-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}

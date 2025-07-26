@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using BussinessLayer.Interfaces;
 using ModelLayer.Models;
+using ModelLayer.DTOs;
 
 namespace OnlineBank.Controllers
 {
@@ -25,10 +26,10 @@ public class DashboardController : ControllerBase
         var dashboardData = await _dashboardService.GetDashboardDataAsync(accountNumber);
         if (dashboardData == null)
         {
-            return NotFound("Dashboard data not found.");
+            return NotFound(ApiResponse.Error("Dashboard data not found."));
         }
 
-        return Ok(dashboardData);
+        return Ok(ApiResponse<object>.SuccessResponse("Dashboard data retrieved successfully.", dashboardData));
     }
 
     // Account Summary
@@ -38,10 +39,10 @@ public class DashboardController : ControllerBase
         var summary = await _dashboardService.GetAccountSummaryAsync(accountNumber);
         if (summary == null)
         {
-            return NotFound("Account summary not found.");
+            return NotFound(ApiResponse.Error("Account summary not found."));
         }
 
-        return Ok(summary);
+        return Ok(ApiResponse<object>.SuccessResponse("Account summary retrieved successfully.", summary));
     }
 
     // Account Statement
@@ -51,10 +52,18 @@ public class DashboardController : ControllerBase
         var statement = await _dashboardService.GetAccountStatementAsync(AccountNumber, startDate, endDate);
         if (statement == null || !statement.Any())
         {
-            return NotFound("No transactions found for the specified period.");
+            return NotFound(ApiResponse.Error("No transactions found for the specified period."));
         }
 
-        return Ok(statement);
+        return Ok(ApiResponse<object>.SuccessResponse("Account statement retrieved successfully.", statement));
+    }
+
+    // All Transactions without date filter
+    [HttpGet("transactions/{accountNumber}")]
+    public async Task<IActionResult> GetAllTransactions(long accountNumber)
+    {
+        var transactions = await _dashboardService.GetAllTransactionsAsync(accountNumber);
+        return Ok(ApiResponse<List<Transaction>>.SuccessResponse("Transactions retrieved successfully.", transactions));
     }
 
     // Change Password
@@ -64,17 +73,17 @@ public class DashboardController : ControllerBase
         var result = await _dashboardService.ChangePasswordAsync(request.AccountNumber, request.OldPassword, request.NewPassword);
         if (!result)
         {
-            return BadRequest("Failed to change password. Please check your credentials.");
+            return BadRequest(ApiResponse.Error("Failed to change password. Please check your credentials."));
         }
 
-        return Ok("Password changed successfully.");
+        return Ok(ApiResponse.Success("Password changed successfully."));
     }
 
     // Session Expired
     [HttpGet("session-expired")]
     public IActionResult SessionExpired()
     {
-        return Unauthorized("Session expired. Please log in again.");
+        return Unauthorized(ApiResponse.Error("Session expired. Please log in again."));
     }
 }
 }

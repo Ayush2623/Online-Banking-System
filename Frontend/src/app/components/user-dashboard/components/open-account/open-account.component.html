@@ -1,157 +1,246 @@
-<div class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-xl rounded-2xl">
-  <form [formGroup]="accountForm" (ngSubmit)="onSubmit()" class="space-y-8">
+<!-- Open Account Form -->
+<div class="max-w-4xl mx-auto">
+  <!-- Header -->
+  <div class="mb-8">
+    <div class="flex items-center justify-between">
+      <div>
+        <h1 class="text-3xl font-bold text-gray-900">Open New Account</h1>
+        <p class="text-gray-600 mt-1">Fill in your details to open a new bank account</p>
+      </div>
+      <button
+        (click)="goBack()"
+        class="btn-secondary px-4 py-2 text-sm font-medium">
+        <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+        Back to Dashboard
+      </button>
+    </div>
+  </div>
 
-    <!-- Personal Details -->
-    <fieldset formGroupName="personalDetails" class="border p-4 rounded-lg shadow-sm">
-      <legend class="text-xl font-semibold mb-4">Personal Details</legend>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <!-- Success Message -->
+  <div *ngIf="successMessage" class="alert alert-success mb-6">
+    <div class="flex items-center">
+      <svg class="h-5 w-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+      </svg>
+      {{ successMessage }}
+    </div>
+  </div>
+
+  <!-- Error Message -->
+  <div *ngIf="error" class="alert alert-error mb-6">
+    <div class="flex items-center">
+      <svg class="h-5 w-5 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+      </svg>
+      {{ error }}
+    </div>
+  </div>
+
+  <!-- Account Opening Form -->
+  <div class="card">
+    <div class="card-header">
+      <h2 class="text-lg font-semibold text-gray-900">Account Information</h2>
+      <p class="text-sm text-gray-600 mt-1">Please provide accurate information for account verification</p>
+    </div>
+
+    <form [formGroup]="openAccountForm" (ngSubmit)="onSubmit()" class="space-y-6 p-6">
+      
+      <!-- Full Name -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <label for="title" class="block text-sm font-medium text-gray-700">Title*</label>
-          <input id="title" formControlName="title" placeholder="Enter title"
-                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
+          <label for="name" class="form-label">Full Name <span class="text-red-500">*</span></label>
+          <input 
+            type="text" 
+            id="name"
+            formControlName="name"
+            class="form-input"
+            [class.border-red-500]="getFieldError('name')"
+            placeholder="Enter your full name">
+          <p *ngIf="getFieldError('name')" class="text-red-500 text-sm mt-1">{{ getFieldError('name') }}</p>
         </div>
+
+        <!-- Account Type -->
         <div>
-          <label for="firstName" class="block text-sm font-medium text-gray-700">First Name*</label>
-          <input id="firstName" formControlName="firstName" placeholder="Enter first name"
-                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-        </div>
-        <div>
-          <label for="middleName" class="block text-sm font-medium text-gray-700">Middle Name</label>
-          <input id="middleName" formControlName="middleName" placeholder="Enter middle name"
-                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-        </div>
-        <div>
-          <label for="lastName" class="block text-sm font-medium text-gray-700">Last Name*</label>
-          <input id="lastName" formControlName="lastName" placeholder="Enter last name"
-                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-        </div>
-        <div>
-          <label for="fatherName" class="block text-sm font-medium text-gray-700">Father's Name*</label>
-          <input id="fatherName" formControlName="fatherName" placeholder="Enter father's name"
-                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-        </div>
-        <div>
-          <label for="mobileNumber" class="block text-sm font-medium text-gray-700">Mobile Number*</label>
-          <input id="mobileNumber" formControlName="mobileNumber" placeholder="Enter mobile number"
-                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-        </div>
-        <div>
-          <label for="email" class="block text-sm font-medium text-gray-700">Email*</label>
-          <input id="email" formControlName="email" placeholder="Enter email"
-                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-        </div>
-        <div>
-          <label for="aadhar" class="block text-sm font-medium text-gray-700">Aadhar Card Number*</label>
-          <input id="aadhar" formControlName="aadhar" placeholder="Enter Aadhar number"
-                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-        </div>
-        <div class="col-span-2">
-          <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth*</label>
-          <input type="date" id="dob" formControlName="dob"
-                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
+          <label for="accountType" class="form-label">Account Type <span class="text-red-500">*</span></label>
+          <select 
+            id="accountType"
+            formControlName="accountType"
+            class="form-input cursor-pointer"
+            [class.border-red-500]="getFieldError('accountType')">
+            <option *ngFor="let type of accountTypes" [value]="type.value">
+              {{ type.label }}
+            </option>
+          </select>
+          <p *ngIf="getFieldError('accountType')" class="text-red-500 text-sm mt-1">{{ getFieldError('accountType') }}</p>
+          <p class="text-xs text-gray-500 mt-1">
+            {{ getAccountTypeDescription() }}
+          </p>
         </div>
       </div>
-    </fieldset>
 
-    <!-- Address Checkbox -->
-<div class="flex items-center gap-2">
-  <input type="checkbox" formControlName="isSameAddress" class="w-4 h-4 text-blue-600 border-gray-300 rounded" />
-  <label class="text-sm">Permanent Address same as Mailing Address</label>
-</div>
+      <!-- Contact Information -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label for="mobileNumber" class="form-label">Mobile Number <span class="text-red-500">*</span></label>
+          <input 
+            type="tel" 
+            id="mobileNumber"
+            formControlName="mobileNumber"
+            class="form-input"
+            [class.border-red-500]="getFieldError('mobileNumber')"
+            placeholder="Enter 10-digit mobile number"
+            maxlength="10">
+          <p *ngIf="getFieldError('mobileNumber')" class="text-red-500 text-sm mt-1">{{ getFieldError('mobileNumber') }}</p>
+        </div>
 
-<!-- Permanent Address -->
-<fieldset formGroupName="permanentAddress" class="border p-4 rounded-lg shadow-sm">
-  <legend class="text-xl font-semibold mb-4">Permanent Address</legend>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <label class="block">
-      Address Line 1*
-      <input formControlName="address1" placeholder="Enter Address Line 1" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-    </label>
-    <label class="block">
-      Address Line 2*
-      <input formControlName="address2" placeholder="Enter Address Line 2" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-    </label>
-    <label class="block">
-      Landmark
-      <input formControlName="landmark" placeholder="Enter Landmark (optional)" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-    </label>
-    <label class="block">
-      State*
-      <input formControlName="state" placeholder="Enter State" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-    </label>
-    <label class="block">
-      City*
-      <input formControlName="city" placeholder="Enter City" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-    </label>
-    <label class="block">
-      Pincode*
-      <input formControlName="pincode" placeholder="Enter Pincode" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-    </label>
+        <div>
+          <label for="email" class="form-label">Email Address <span class="text-red-500">*</span></label>
+          <input 
+            type="email" 
+            id="email"
+            formControlName="email"
+            class="form-input"
+            [class.border-red-500]="getFieldError('email')"
+            placeholder="Enter your Gmail address (required)">
+          <p *ngIf="getFieldError('email')" class="text-red-500 text-sm mt-1">{{ getFieldError('email') }}</p>
+        </div>
+      </div>
+
+      <!-- Address Information -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label for="residentialAddress" class="form-label">Residential Address <span class="text-red-500">*</span></label>
+          <textarea 
+            id="residentialAddress"
+            formControlName="residentialAddress"
+            rows="3"
+            class="form-input"
+            [class.border-red-500]="getFieldError('residentialAddress')"
+            placeholder="Enter your current residential address"></textarea>
+          <p *ngIf="getFieldError('residentialAddress')" class="text-red-500 text-sm mt-1">{{ getFieldError('residentialAddress') }}</p>
+        </div>
+
+        <div>
+          <label for="permanentAddress" class="form-label">Permanent Address <span class="text-red-500">*</span></label>
+          <textarea 
+            id="permanentAddress"
+            formControlName="permanentAddress"
+            rows="3"
+            class="form-input"
+            [class.border-red-500]="getFieldError('permanentAddress')"
+            placeholder="Enter your permanent address"></textarea>
+          <p *ngIf="getFieldError('permanentAddress')" class="text-red-500 text-sm mt-1">{{ getFieldError('permanentAddress') }}</p>
+        </div>
+      </div>
+
+      <!-- Document Numbers -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label for="aadharCardNumber" class="form-label">Aadhaar Number <span class="text-red-500">*</span></label>
+          <input 
+            type="text" 
+            id="aadharCardNumber"
+            formControlName="aadharCardNumber"
+            class="form-input"
+            [class.border-red-500]="getFieldError('aadharCardNumber')"
+            placeholder="Enter 12-digit Aadhaar number"
+            maxlength="12">
+          <p *ngIf="getFieldError('aadharCardNumber')" class="text-red-500 text-sm mt-1">{{ getFieldError('aadharCardNumber') }}</p>
+        </div>
+
+        <div>
+          <label for="occupationDetails" class="form-label">Occupation Details <span class="text-red-500">*</span></label>
+          <input 
+            type="text" 
+            id="occupationDetails"
+            formControlName="occupationDetails"
+            class="form-input"
+            [class.border-red-500]="getFieldError('occupationDetails')"
+            placeholder="Enter your occupation/profession">
+          <p *ngIf="getFieldError('occupationDetails')" class="text-red-500 text-sm mt-1">{{ getFieldError('occupationDetails') }}</p>
+        </div>
+      </div>
+
+      <!-- Account Details -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label for="balance" class="form-label">Initial Balance <span class="text-red-500">*</span></label>
+          <input 
+            type="number" 
+            id="balance"
+            formControlName="balance"
+            class="form-input"
+            [class.border-red-500]="getFieldError('balance')"
+            placeholder="Enter initial deposit amount"
+            min="0"
+            step="0.01">
+          <p *ngIf="getFieldError('balance')" class="text-red-500 text-sm mt-1">{{ getFieldError('balance') }}</p>
+          <p class="text-xs text-gray-500 mt-1">Minimum balance requirements may apply based on account type</p>
+        </div>
+
+        <!-- Net Banking Option -->
+        <div class="flex items-center mt-8">
+          <input 
+            type="checkbox" 
+            id="enableNetBanking"
+            formControlName="enableNetBanking"
+            class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+          <label for="enableNetBanking" class="ml-2 text-sm font-medium text-gray-700">
+            Enable Net Banking Services
+          </label>
+        </div>
+      </div>
+
+      <!-- Important Information -->
+      <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+        <div class="flex items-start">
+          <svg class="h-5 w-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <div class="text-sm text-blue-800">
+            <p class="font-medium mb-2">Important Information</p>
+            <ul class="list-disc list-inside space-y-1">
+              <li>All fields marked with (*) are mandatory</li>
+              <li>Your account will be reviewed and approved by our admin team</li>
+              <li>You will receive a notification once your account is approved</li>
+              <li>Initial account balance will be set to ₹0</li>
+              <li>Net banking services can be enabled later if not selected now</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="flex items-center justify-between pt-6 border-t border-gray-200">
+        <button
+          type="button"
+          (click)="goBack()"
+          class="btn-secondary px-6 py-2 text-sm font-medium">
+          Cancel
+        </button>
+        
+        <button 
+          type="submit" 
+          [disabled]="isLoading || openAccountForm.invalid"
+          class="btn-primary px-8 py-2 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center">
+          <div *ngIf="isLoading" class="spinner mr-3"></div>
+          <svg *ngIf="!isLoading" class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+          </svg>
+          <span *ngIf="!isLoading">Submit Application</span>
+          <span *ngIf="isLoading">Submitting...</span>
+        </button>
+      </div>
+    </form>
   </div>
-</fieldset>
 
-
-<!-- Occupation -->
-<fieldset formGroupName="occupationDetails" class="border p-4 rounded-lg shadow-sm">
-  <legend class="text-xl font-semibold mb-4">Occupation Details</legend>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <label class="block">
-      Occupation Type*
-      <input 
-        placeholder="Enter your occupation type" 
-        formControlName="occupationType" 
-        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" 
-      />
-    </label>
-    <label class="block">
-      Source of Income*
-      <input 
-        placeholder="Enter source of income" 
-        formControlName="sourceOfIncome" 
-        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" 
-      />
-    </label>
-    <label class="block col-span-2">
-      Gross Annual Income*
-      <input 
-        placeholder="Enter gross annual income" 
-        formControlName="grossAnnualIncome" 
-        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" 
-      />
-    </label>
+  <!-- Help Section -->
+  <div class="mt-8 text-center">
+    <p class="text-sm text-gray-600">
+      Need help with your application? 
+      <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Contact Support</a>
+    </p>
   </div>
-</fieldset>
-
-<!-- Other Options -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-  <label class="block">
-    Do you want a debit card?*
-    <select 
-      formControlName="wantsDebitCard" 
-      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
-      <option value="" disabled>Select debit card preference</option>
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </select>
-  </label>
-
-  <div class="flex items-center gap-2 mt-2">
-    <input type="checkbox" formControlName="optNetBanking" class="w-4 h-4 text-blue-600 border-gray-300 rounded" />
-    <label class="text-sm">Opt for Net Banking</label>
-  </div>
-
-  <div class="flex items-center gap-2 mt-2">
-    <input type="checkbox" formControlName="agree" class="w-4 h-4 text-blue-600 border-gray-300 rounded" />
-    <label class="text-sm">I agree*</label>
-  </div>
-</div>
-
-<!-- Submit -->
-<div class="pt-6">
-    <button type="submit"
-      class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg shadow-md transition-all">
-      Submit
-    </button>
-  </div>
-  </form>
 </div>

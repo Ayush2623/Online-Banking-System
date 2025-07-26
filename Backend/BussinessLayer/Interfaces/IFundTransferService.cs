@@ -9,4 +9,5 @@ public interface IFundTransferService
     {
         Task<bool> AddPayeeAsync(PayeeDTO payee);
         Task<bool> TransferFundsAsync(FundTransferRequest request);
+        Task<List<Payee>> GetPayeesByAccountNumberAsync(long accountNumber);
     }

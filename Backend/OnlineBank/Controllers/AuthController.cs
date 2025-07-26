@@ -28,20 +28,20 @@ public class AuthController : ControllerBase
         {
             var errorMessage = result.Substring(7); // Remove "Error: " prefix
             if (errorMessage == "Username already exists.")
-                return Conflict(new { message = errorMessage }); // HTTP 409
+                return Conflict(ApiResponse.Error(errorMessage)); // HTTP 409
             if (errorMessage == "Mobile number is required.")
-                return BadRequest(new { message = errorMessage }); // HTTP 400
-            return BadRequest(new { message = errorMessage }); // Default for other errors
+                return BadRequest(ApiResponse.Error(errorMessage)); // HTTP 400
+            return BadRequest(ApiResponse.Error(errorMessage)); // Default for other errors
         }
 
         // If result is not an error, it should be the AuthId
         if (int.TryParse(result, out int authId))
         {
-            return Ok(new { message = "User registered successfully.", authId }); // HTTP 200
+            return Ok(ApiResponse<object>.SuccessResponse("User registered successfully.", new { authId })); // HTTP 200
         }
 
         // Fallback for unexpected results
-        return BadRequest(new { message = "Unexpected result from registration." });
+        return BadRequest(ApiResponse.Error("Unexpected result from registration."));
     }
 
 
@@ -51,14 +51,14 @@ public class AuthController : ControllerBase
         var result = await _authService.LoginAsync(login);
 
         if (result == "Invalid username or password.")
-            return Unauthorized(new { message = result }); // HTTP 401
+            return Unauthorized(ApiResponse.Error(result)); // HTTP 401
 
         // Fetch user details to get AuthId
         var user = await _authService.GetUserAsync(login.Username);
         if (user == null)
-            return BadRequest(new { message = "User not found after login." });
+            return BadRequest(ApiResponse.Error("User not found after login."));
 
         
-        return Ok(new { message = "Login successful.", token = result, authId = user.AuthId }); // HTTP 200
+        return Ok(ApiResponse<object>.SuccessResponse("Login successful.", new { token = result, authId = user.AuthId })); // HTTP 200
     }
 }

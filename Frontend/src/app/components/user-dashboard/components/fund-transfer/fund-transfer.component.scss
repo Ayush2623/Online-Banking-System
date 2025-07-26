@@ -1,0 +1,130 @@
+// Fund Transfer Component Styles
+.fund-transfer-container {
+  .account-info-card {
+    .balance-display {
+      @apply text-2xl font-bold text-green-600;
+    }
+    
+    .account-detail {
+      @apply flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0;
+      
+      .label {
+        @apply text-sm font-medium text-gray-600;
+      }
+      
+      .value {
+        @apply text-sm text-gray-900;
+        
+        &.account-number {
+          @apply font-mono;
+        }
+      }
+    }
+  }
+  
+  .payee-details {
+    @apply bg-gray-50 border border-gray-200 rounded-lg p-4;
+    
+    .payee-info-grid {
+      @apply grid grid-cols-2 gap-4 text-sm;
+      
+      .info-item {
+        @apply flex flex-col;
+        
+        .label {
+          @apply text-gray-600 text-xs uppercase tracking-wide font-medium;
+        }
+        
+        .value {
+          @apply text-gray-900 font-medium mt-1;
+          
+          &.account-number,
+          &.ifsc-code {
+            @apply font-mono;
+          }
+        }
+      }
+    }
+  }
+  
+  .transfer-form {
+    .amount-input-container {
+      position: relative;
+      
+      .currency-symbol {
+        @apply absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 pointer-events-none;
+      }
+      
+      .amount-input {
+        @apply pl-8;
+      }
+    }
+    
+    .transaction-type-info {
+      @apply text-xs text-gray-500 mt-1 italic;
+    }
+  }
+  
+  .info-panel {
+    @apply bg-blue-50 border border-blue-200 rounded-lg p-4;
+    
+    .info-content {
+      @apply flex items-start;
+      
+      .info-icon {
+        @apply h-5 w-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0;
+      }
+      
+      .info-text {
+        @apply text-sm text-blue-800;
+        
+        .info-title {
+          @apply font-medium mb-2;
+        }
+        
+        .info-list {
+          @apply list-disc list-inside space-y-1;
+        }
+      }
+    }
+  }
+  
+  .warning-panel {
+    @apply bg-yellow-50 border border-yellow-200 rounded-lg p-4;
+    
+    .warning-content {
+      @apply flex items-start;
+      
+      .warning-icon {
+        @apply h-5 w-5 text-yellow-600 mt-0.5 mr-2 flex-shrink-0;
+      }
+      
+      .warning-text {
+        @apply text-sm text-yellow-800;
+        
+        .warning-title {
+          @apply font-medium;
+        }
+        
+        .warning-action {
+          @apply mt-2 inline-flex items-center text-yellow-800 hover:text-yellow-900 font-medium cursor-pointer;
+          
+          .action-arrow {
+            @apply ml-1 h-4 w-4;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .fund-transfer-container {
+    .payee-details {
+      .payee-info-grid {
+        @apply grid-cols-1 gap-2;
+      }
+    }
+  }
+}

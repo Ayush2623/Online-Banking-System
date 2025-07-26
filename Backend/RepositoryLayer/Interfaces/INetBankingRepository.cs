@@ -14,6 +14,7 @@ namespace RepositoryLayer.Interfaces
         
 
         Task<NetBanking> GetNetBankingByAccountIdAsync(long accountNumber);
+        Task<bool> UpdateAccountAsync(Account account);
        
     }
 }

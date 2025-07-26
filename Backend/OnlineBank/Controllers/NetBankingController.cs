@@ -25,10 +25,10 @@ namespace OnlineBank.Controllers
             var result = await _netBankingService.RegisterForNetBanking(request.AccountNumber, request.Username, request.Password);
             if (result == "NetBanking registration successful.")
             {
-                return Ok(result);
+                return Ok(ApiResponse.Success(result));
             }
 
-            return BadRequest(result);
+            return BadRequest(ApiResponse.Error(result));
         }
         // // Enable NetBanking
         // [HttpPost("enable")]
@@ -50,10 +50,10 @@ namespace OnlineBank.Controllers
             var result = await _netBankingService.UpdatePasswordAsync(request);
             if (!result)
             {
-                return BadRequest("Failed to update NetBanking password. Please check the details.");
+                return BadRequest(ApiResponse.Error("Failed to update NetBanking password. Please check the details."));
             }
 
-            return Ok("NetBanking password updated successfully.");
+            return Ok(ApiResponse.Success("NetBanking password updated successfully."));
         }
 
         // Get NetBanking Details
@@ -63,10 +63,10 @@ namespace OnlineBank.Controllers
             var netBankingDetails = await _netBankingService.GetNetBankingDetailsAsync(accountNumber);
             if (netBankingDetails == null)
             {
-                return NotFound("NetBanking details not found for the specified account.");
+                return NotFound(ApiResponse.Error("NetBanking details not found for the specified account."));
             }
 
-            return Ok(netBankingDetails);
+            return Ok(ApiResponse<object>.SuccessResponse("NetBanking details retrieved successfully.", netBankingDetails));
         }
     }
 }

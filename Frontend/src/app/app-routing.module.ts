@@ -19,7 +19,7 @@ const routes: Routes = [
   {
   path: 'userDashboard',
   loadChildren: () => import('./components/user-dashboard/user-dashboard.module').then(m => m.UserDashboardModule),
-  canActivate: [AuthGuard, AccountGuard],
+  canActivate: [AuthGuard],
   data: { role: 'User' }
 }
 

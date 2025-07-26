@@ -1,4 +1,596 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles for Online Banking System */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom Banking Theme */
+:root {
+  --primary-blue: #1e40af;
+  --primary-blue-dark: #1e3a8a;
+  --secondary-blue: #3b82f6;
+  --light-blue: #dbeafe;
+  --success-green: #10b981;
+  --warning-orange: #f59e0b;
+  --danger-red: #ef4444;
+  --neutral-gray: #6b7280;
+  --light-gray: #f9fafb;
+  --border-gray: #e5e7eb;
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-tertiary: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--light-gray);
+}
+
+/* Enhanced Background Images */
+.background-img {
+  background-image: var(--gradient-primary);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.login-background {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  min-height: 100vh;
+  position: relative;
+}
+
+.login-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+              radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
+  animation: backgroundPulse 8s ease-in-out infinite alternate;
+}
+
+/* Custom Button Styles */
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+
+  .btn-success {
+    @apply bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+
+  .btn-danger {
+    @apply bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
+
+.card-header {
+  @apply border-b border-gray-200 pb-4 mb-4;
+}
+
+/* Form Styles */
+.form-input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-2;
+}
+
+/* Table Styles */
+.table-container {
+  @apply overflow-x-auto;
+}
+
+.table {
+  @apply min-w-full divide-y divide-gray-200;
+}
+
+.table-header {
+  @apply bg-gray-50;
+}
+
+.table-cell {
+  @apply px-6 py-4 whitespace-nowrap text-sm;
+}
+
+/* Loading Spinner */
+.spinner {
+  @apply animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600;
+}
+
+/* Alert Styles */
+.alert {
+  @apply p-4 rounded-lg mb-4;
+}
+
+.alert-success {
+  @apply bg-green-100 border border-green-400 text-green-700;
+}
+
+.alert-error {
+  @apply bg-red-100 border border-red-400 text-red-700;
+}
+
+.alert-warning {
+  @apply bg-yellow-100 border border-yellow-400 text-yellow-700;
+}
+
+.alert-info {
+  @apply bg-blue-100 border border-blue-400 text-blue-700;
+}
+
+/* Dashboard Layout */
+.dashboard-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.stat-card {
+  @apply bg-white rounded-lg shadow p-6 border-l-4;
+}
+
+.stat-card-blue {
+  @apply border-blue-500;
+}
+
+.stat-card-green {
+  @apply border-green-500;
+}
+
+.stat-card-orange {
+  @apply border-orange-500;
+}
+
+.stat-card-red {
+  @apply border-red-500;
+}
+
+/* Navigation */
+.nav-link {
+  @apply flex items-center px-4 py-2 text-sm font-medium rounded-md transition-colors duration-200;
+}
+
+.nav-link-active {
+  @apply bg-blue-100 text-blue-700;
+}
+
+.nav-link-inactive {
+  @apply text-gray-600 hover:bg-gray-100 hover:text-gray-900;
+}
+
+/* Modern Navbar Styles */
+.nav-link-modern {
+  @apply flex items-center px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 rounded-lg transition-all duration-300 transform hover:scale-105;
+}
+
+/* Modern Login Components */
+.login-card {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  @apply relative;
+}
+
+.input-container {
+  @apply relative;
+}
+
+.form-input-modern {
+  @apply w-full px-12 py-4 bg-white/70 backdrop-blur-sm border-2 border-gray-200 rounded-xl focus:outline-none focus:border-blue-500 focus:bg-white transition-all duration-300 text-gray-800 placeholder-gray-500;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.form-input-modern:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.input-icon {
+  @apply absolute left-4 top-1/2 transform -translate-y-1/2 pointer-events-none;
+}
+
+.password-toggle-btn {
+  @apply absolute right-4 top-1/2 transform -translate-y-1/2 p-1 rounded-full hover:bg-gray-100 transition-colors;
+}
+
+.form-label-modern {
+  @apply block text-sm font-semibold text-gray-700 mb-2 ml-1;
+}
+
+.error-message {
+  @apply text-red-500 text-sm mt-2 ml-1 flex items-center;
+}
+
+.login-btn-modern {
+  @apply w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center text-lg;
+}
+
+.spinner-modern {
+  @apply animate-spin rounded-full h-6 w-6 border-b-2 border-white;
+}
+
+.modern-link {
+  @apply flex items-center text-blue-600 hover:text-purple-600 font-medium transition-all duration-300 hover:scale-105;
+}
+
+.register-link {
+  @apply text-blue-600 hover:text-purple-600 font-bold transition-all duration-300 flex items-center;
+}
+
+.security-notice {
+  @apply p-4 bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-xl;
+}
+
+.security-icon {
+  @apply mr-3 mt-0.5;
+}
+
+/* Modern Dashboard Components */
+.modern-refresh-btn {
+  @apply bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center;
+}
+
+.modern-stat-card {
+  @apply bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden relative;
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modern-stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.balance-card::before {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+}
+
+.type-card::before {
+  background: linear-gradient(90deg, #10b981, #06d6a0);
+}
+
+.status-card::before {
+  background: linear-gradient(90deg, #f59e0b, #f97316);
+}
+
+.card-content {
+  @apply p-6;
+}
+
+.card-label {
+  @apply text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2;
+}
+
+.balance-amount {
+  @apply text-3xl font-bold text-gray-800 mb-1;
+}
+
+.account-type {
+  @apply text-2xl font-bold text-gray-800 mb-1;
+}
+
+.account-status {
+  @apply text-2xl font-bold mr-2;
+}
+
+.status-active {
+  @apply text-green-600;
+}
+
+.status-inactive {
+  @apply text-red-600;
+}
+
+.card-meta {
+  @apply text-xs text-gray-500;
+}
+
+.card-icon {
+  @apply h-16 w-16 rounded-2xl flex items-center justify-center shadow-lg;
+}
+
+.balance-icon {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+}
+
+.type-icon {
+  background: linear-gradient(135deg, #10b981, #06d6a0);
+}
+
+.status-icon.active {
+  background: linear-gradient(135deg, #10b981, #06d6a0);
+}
+
+.status-icon.inactive {
+  background: linear-gradient(135deg, #ef4444, #f97316);
+}
+
+.balance-trend {
+  @apply flex items-center justify-between mt-4 pt-4 border-t border-gray-100;
+}
+
+.trend-indicator {
+  @apply text-sm font-bold px-2 py-1 rounded-full;
+}
+
+.trend-indicator.positive {
+  @apply bg-green-100 text-green-600;
+}
+
+.trend-text {
+  @apply text-xs text-gray-500;
+}
+
+.account-features {
+  @apply flex space-x-2 mt-4;
+}
+
+.feature-badge {
+  @apply bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full;
+}
+
+.status-indicator {
+  @apply w-3 h-3 rounded-full;
+}
+
+.status-indicator.active {
+  @apply bg-green-400 animate-pulse-glow;
+}
+
+.status-indicator.inactive {
+  @apply bg-red-400;
+}
+
+.status-info {
+  @apply mt-4 pt-4 border-t border-gray-100;
+}
+
+.last-login {
+  @apply text-xs text-gray-500;
+}
+
+/* Advanced Animations */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes backgroundPulse {
+  0% { opacity: 0.5; }
+  100% { opacity: 0.8; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-20px) rotate(120deg); }
+  66% { transform: translateY(-10px) rotate(240deg); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-15px) rotate(-120deg); }
+  66% { transform: translateY(-25px) rotate(-240deg); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-30px) scale(1.1); }
+}
+
+@keyframes float-fast {
+  0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+  25% { transform: translateY(-10px) rotate(90deg) scale(1.05); }
+  50% { transform: translateY(-20px) rotate(180deg) scale(1.1); }
+  75% { transform: translateY(-10px) rotate(270deg) scale(1.05); }
+}
+
+@keyframes bounce-in {
+  0% { 
+    transform: scale(0) rotate(-360deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotate(-180deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-in-down {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes expand {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.5));
+  }
+  50% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.8));
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes text-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+@keyframes check {
+  0% {
+    transform: scale(0) rotate(45deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(45deg);
+  }
+  100% {
+    transform: scale(1) rotate(45deg);
+  }
+}
+
+/* Animation Classes */
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-float-delayed { animation: float-delayed 8s ease-in-out infinite; }
+.animate-float-slow { animation: float-slow 10s ease-in-out infinite; }
+.animate-float-fast { animation: float-fast 4s ease-in-out infinite; }
+.animate-bounce-in { animation: bounce-in 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+.animate-slide-up { animation: slide-up 0.8s ease-out; }
+.animate-slide-in-right { animation: slide-in-right 0.6s ease-out both; }
+.animate-slide-in-left { animation: slide-in-left 0.6s ease-out both; }
+.animate-slide-in-up { animation: slide-in-up 0.6s ease-out both; }
+.animate-fade-in { animation: fade-in 1s ease-out both; }
+.animate-fade-in-down { animation: fade-in-down 1s ease-out both; }
+.animate-fade-in-up { animation: fade-in-up 0.8s ease-out both; }
+.animate-expand { animation: expand 1.5s ease-out 0.5s both; }
+.animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+.animate-pulse-slow { animation: pulse-slow 3s ease-in-out infinite; }
+.animate-text-shimmer { 
+  background-size: 200% auto;
+  animation: text-shimmer 3s linear infinite;
+}
+.animate-shake { animation: shake 0.6s ease-in-out; }
+.animate-check { animation: check 0.6s ease-in-out; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    @apply grid-cols-1;
+  }
+  
+  .login-card {
+    @apply mx-4 p-6;
+  }
+  
+  .form-input-modern {
+    @apply px-10 py-3 text-base;
+  }
+  
+  .login-btn-modern {
+    @apply py-3 text-base;
+  }
+}

@@ -1,64 +1,270 @@
-<div class="p-6 bg-gray-100 min-h-screen">
-  <h2 class="text-2xl font-bold text-blue-800 mb-4">Pending Account Requests</h2>
+<div class="min-h-screen bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-sm border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <div class="h-8 w-8 bg-blue-600 rounded-full flex items-center justify-center">
+              <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="ml-4">
+            <h1 class="text-xl font-semibold text-gray-900">Admin Dashboard</h1>
+            <p class="text-sm text-gray-500">Online Banking System</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center space-x-4">
+          <!-- Welcome Message -->
+          <div class="hidden md:block text-sm text-gray-700">
+            Welcome, <span class="font-medium">{{ currentUser?.username || 'Admin' }}</span>
+          </div>
+          
+          <!-- Refresh Button -->
+          <button
+            (click)="refreshData()"
+            class="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+            title="Refresh Data">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+            </svg>
+          </button>
+          
+          <!-- Logout Button -->
+          <button
+            (click)="logout()"
+            class="btn-danger px-4 py-2 text-sm font-medium">
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  <p *ngIf="message" class="text-red-500 mb-4">{{ message }}</p>
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+    
+    <!-- Success/Error Messages -->
+    <div *ngIf="successMessage" class="alert alert-success mb-6">
+      <div class="flex items-center">
+        <svg class="h-5 w-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+        {{ successMessage }}
+      </div>
+    </div>
 
-  <div class="overflow-x-auto bg-white shadow-md rounded-lg">
-    <table class="min-w-full divide-y divide-gray-200">
-      <thead class="bg-blue-800 text-white">
-        <tr>
-          <th class="px-4 py-2 text-left">Request ID</th>
-          <th class="px-4 py-2 text-left">Name</th>
-          <th class="px-4 py-2 text-left">Email</th>
-          <th class="px-4 py-2 text-left">Mobile</th>
-          <th class="px-4 py-2 text-left">Aadhar</th>
-          <th class="px-4 py-2 text-left">Residential Address</th>
-          <th class="px-4 py-2 text-left">Permanent Address</th>
-          <th class="px-4 py-2 text-left">Occupation</th>
-          <th class="px-4 py-2 text-left">Type</th>
-          <th class="px-4 py-2 text-left">Balance</th>
-          <th class="px-4 py-2 text-left">NetBanking</th>
-          <th class="px-4 py-2 text-left">Actions</th>
-        </tr>
-      </thead>
-      <tbody class="bg-white divide-y divide-gray-100">
-        <tr *ngFor="let acc of pendingAccounts">
-          <td class="px-4 py-2">{{ acc.requestId }}</td>
-          <td class="px-4 py-2">{{ acc.name }}</td>
-          <td class="px-4 py-2">{{ acc.email }}</td>
-          <td class="px-4 py-2">{{ acc.mobileNumber }}</td>
-          <td class="px-4 py-2">{{ acc.aadharCardNumber }}</td>
-          <td class="px-4 py-2">{{ acc.residentialAddress }}</td>
-          <td class="px-4 py-2">{{ acc.permanentAddress }}</td>
-          <td class="px-4 py-2">{{ acc.occupationDetails }}</td>
-          <td class="px-4 py-2">{{ acc.accountType }}</td>
-          <td class="px-4 py-2">{{ acc.balance }}</td>
-          <td class="px-4 py-2">
-            <span [ngClass]="{
-              'text-green-600 font-semibold': acc.isNetBankingEnabled,
-              'text-red-600 font-semibold': !acc.isNetBankingEnabled
-            }">
-              {{ acc.isNetBankingEnabled ? 'Enabled' : 'Disabled' }}
+    <div *ngIf="error" class="alert alert-error mb-6">
+      <div class="flex items-center">
+        <svg class="h-5 w-5 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+        </svg>
+        {{ error }}
+      </div>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="dashboard-grid mb-8">
+      <!-- Pending Requests Card -->
+      <div class="stat-card stat-card-orange">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-600 mb-1">Pending Requests</p>
+            <p class="text-3xl font-bold text-orange-600">{{ totalPendingRequests }}</p>
+          </div>
+          <div class="h-12 w-12 bg-orange-100 rounded-lg flex items-center justify-center">
+            <svg class="h-6 w-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Approved Today Card -->
+      <div class="stat-card stat-card-green">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-600 mb-1">Approved Today</p>
+            <p class="text-3xl font-bold text-green-600">{{ totalApprovedToday }}</p>
+          </div>
+          <div class="h-12 w-12 bg-green-100 rounded-lg flex items-center justify-center">
+            <svg class="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rejected Today Card -->
+      <div class="stat-card stat-card-red">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-600 mb-1">Rejected Today</p>
+            <p class="text-3xl font-bold text-red-600">{{ totalRejectedToday }}</p>
+          </div>
+          <div class="h-12 w-12 bg-red-100 rounded-lg flex items-center justify-center">
+            <svg class="h-6 w-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Account Requests Table -->
+    <div class="card">
+      <div class="card-header">
+        <div class="flex items-center justify-between">
+          <div>
+            <h2 class="text-lg font-semibold text-gray-900">Account Opening Requests</h2>
+            <p class="text-sm text-gray-600 mt-1">Review and approve/reject new account applications</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-sm text-gray-500">Total: {{ pendingRequests.length }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading State -->
+      <div *ngIf="isLoading" class="flex items-center justify-center py-12">
+        <div class="spinner mr-3"></div>
+        <span class="text-gray-600">Loading account requests...</span>
+      </div>
+
+      <!-- Empty State -->
+      <div *ngIf="!isLoading && pendingRequests.length === 0" class="text-center py-12">
+        <svg class="mx-auto h-12 w-12 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+        </svg>
+        <h3 class="text-lg font-medium text-gray-900 mb-2">No Pending Requests</h3>
+        <p class="text-gray-600">There are currently no account opening requests to review.</p>
+      </div>
+
+      <!-- Requests Table -->
+      <div *ngIf="!isLoading && pendingRequests.length > 0" class="table-container">
+        <table class="table">
+          <thead class="table-header">
+            <tr>
+              <th class="table-cell font-semibold text-gray-900">Request ID</th>
+              <th class="table-cell font-semibold text-gray-900">Applicant Name</th>
+              <th class="table-cell font-semibold text-gray-900">Account Type</th>
+              <th class="table-cell font-semibold text-gray-900">Mobile Number</th>
+              <th class="table-cell font-semibold text-gray-900">Email</th>
+              <th class="table-cell font-semibold text-gray-900">Request Date</th>
+              <th class="table-cell font-semibold text-gray-900">Status</th>
+              <th class="table-cell font-semibold text-gray-900">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <tr *ngFor="let request of pendingRequests" class="hover:bg-gray-50 transition-colors">
+              <td class="table-cell font-medium text-gray-900">#{{ request.requestId }}</td>
+              <td class="table-cell">
+                <div class="font-medium text-gray-900">{{ request.name }}</div>
+                <div class="text-sm text-gray-500">Aadhar: {{ request.aadharCardNumber }}</div>
+              </td>
+              <td class="table-cell">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                  {{ request.accountType }}
+                </span>
+              </td>
+              <td class="table-cell text-gray-900">{{ request.mobileNumber }}</td>
+              <td class="table-cell text-gray-900">{{ request.email }}</td>
+              <td class="table-cell text-gray-500">{{ formatDate(request.createdAt) }}</td>
+              <td class="table-cell">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border" [class]="getStatusBadgeClass(request.status)">
+                  {{ request.status }}
+                </span>
+              </td>
+              <td class="table-cell">
+                <div *ngIf="request.status === 'Pending'" class="flex space-x-2">
+                  <button
+                    (click)="approveAccount(request.requestId)"
+                    class="btn-success px-3 py-1 text-xs font-medium"
+                    title="Approve Request">
+                    <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Approve
+                  </button>
+                  <button
+                    (click)="rejectAccount(request.requestId)"
+                    class="btn-danger px-3 py-1 text-xs font-medium"
+                    title="Reject Request">
+                    <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    Reject
+                  </button>
+                </div>
+                <div *ngIf="request.status !== 'Pending'" class="text-sm text-gray-500">
+                  {{ request.status === 'Approved' ? 'Approved' : 'Rejected' }}
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Additional Admin Features -->
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Quick Actions Card -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="text-lg font-semibold text-gray-900">Quick Actions</h3>
+        </div>
+        <div class="p-6 space-y-3">
+          <button class="w-full btn-primary text-left" disabled>
+            <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+            View System Reports
+          </button>
+          <button class="w-full btn-secondary text-left" disabled>
+            <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+            </svg>
+            Manage Users
+          </button>
+          <button class="w-full btn-secondary text-left" disabled>
+            <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            System Settings
+          </button>
+        </div>
+      </div>
+
+      <!-- System Status Card -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="text-lg font-semibold text-gray-900">System Status</h3>
+        </div>
+        <div class="p-6 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-600">Database Connection</span>
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+              <div class="w-2 h-2 bg-green-400 rounded-full mr-1"></div>
+              Online
             </span>
-          </td>
-          <td class="px-4 py-2 space-x-2">
-            <button
-              class="bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700 transition"
-              (click)="approve(acc.requestId)">
-              Approve
-            </button>
-            <button
-              class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 transition"
-              (click)="reject(acc.requestId)">
-              Reject
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <p *ngIf="pendingAccounts.length === 0" class="mt-4 text-gray-600 text-center">
-    No pending requests.
-  </p>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-600">API Services</span>
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+              <div class="w-2 h-2 bg-green-400 rounded-full mr-1"></div>
+              Active
+            </span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-600">Last Backup</span>
+            <span class="text-xs text-gray-500">{{ getCurrentDate() }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </div>

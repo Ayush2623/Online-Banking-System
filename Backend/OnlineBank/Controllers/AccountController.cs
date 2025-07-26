@@ -27,7 +27,11 @@ public class AccountController : ControllerBase
     {
         // Console.WriteLine($"EnableNetBanking: {pendingAccountDto.EnableNetBanking}"); // Debugging log
         var result = await _accountService.OpenAccountAsync(pendingAccountDto);
-        return Ok(result);
+        if (result.StartsWith("Success"))
+        {
+            return Ok(ApiResponse.Success("Account opening request submitted successfully."));
+        }
+        return BadRequest(ApiResponse.Error(result));
     }
 
     [HttpGet("view-account/{userId}")]
@@ -40,23 +44,23 @@ public class AccountController : ControllerBase
         // Check if the claim is null or invalid
         if (string.IsNullOrEmpty(loggedInUserIdClaim) || !int.TryParse(loggedInUserIdClaim, out var loggedInUserId))
         {
-            return Unauthorized("Invalid or missing user ID in token.");
+            return Unauthorized(ApiResponse.Error("Invalid or missing user ID in token."));
         }
 
         // Compare the logged-in user's ID with the requested userId
         if (loggedInUserId != userId)
         {
-            return StatusCode(StatusCodes.Status403Forbidden, "You are not authorized to view this account.");
+            return StatusCode(StatusCodes.Status403Forbidden, ApiResponse.Error("You are not authorized to view this account."));
         }
 
         // Retrieve the account details
         var account = await _accountService.ViewAccountByUserIdAsync(userId);
         if (account == null)
         {
-            return NotFound("Account not found.");
+            return NotFound(ApiResponse.Error("Account not found."));
         }
 
-        return Ok(account);
+        return Ok(ApiResponse<object>.SuccessResponse("Account retrieved successfully.", account));
     }
 
     // Update account details
@@ -65,18 +69,18 @@ public class AccountController : ControllerBase
     public async Task<IActionResult> UpdateAccount(long accountNumber, [FromBody] UpdateAccountDTO updatedAccount)
     {
         
-        if (accountNumber == null )
+        if (accountNumber <= 0)
         {
-            return BadRequest("Account number is required.");
+            return BadRequest(ApiResponse.Error("Account number is required."));
         }
 
         var result = await _accountService.UpdateAccountAsync(accountNumber, updatedAccount);
         if (!result)
         {
-            return NotFound("Account not found or update failed.");
+            return NotFound(ApiResponse.Error("Account not found or update failed."));
         }
 
-        return Ok("Account updated successfully.");
+        return Ok(ApiResponse.Success("Account updated successfully."));
     }
 
 
@@ -86,7 +90,7 @@ public class AccountController : ControllerBase
     {
         if (request == null || string.IsNullOrEmpty(request.MobileNumber) || string.IsNullOrEmpty(request.Email))
         {
-            return BadRequest("Invalid request. MobileNumber and Email are required.");
+            return BadRequest(ApiResponse.Error("Invalid request. MobileNumber and Email are required."));
         }
 
         Console.WriteLine($"Processing ForgotPassword for UserId: {request.UserId}, MobileNumber: {request.MobileNumber}");
@@ -96,7 +100,7 @@ public class AccountController : ControllerBase
         if (!isMobileNumberValid)
         {
             Console.WriteLine("Mobile number validation failed.");
-            return BadRequest("Invalid mobile number for the provided user ID.");
+            return BadRequest(ApiResponse.Error("Invalid mobile number for the provided user ID."));
         }
 
         // Generate a reset token
@@ -105,7 +109,7 @@ public class AccountController : ControllerBase
         if (!tokenSaved)
         {
             // Console.WriteLine("Failed to save reset token.");
-            return BadRequest("Failed to generate reset token. Please try again.");
+            return BadRequest(ApiResponse.Error("Failed to generate reset token. Please try again."));
         }
 
         // Send the reset token via email
@@ -114,7 +118,7 @@ public class AccountController : ControllerBase
         await _smtpService.SendEmailAsync(request.Email, "Password Reset Request", emailBody);
 
         Console.WriteLine("Password reset link sent successfully.");
-        return Ok("Password reset link has been sent to your registered email.");
+        return Ok(ApiResponse.Success("Password reset link has been sent to your registered email."));
     }
 
     [HttpPost("forgot-user-id")]
@@ -124,21 +128,21 @@ public class AccountController : ControllerBase
         var isMobileNumberValid = await _accountService.VerifyMobileNumberAsync(request.UserId, request.MobileNumber);
         if (!isMobileNumberValid)
         {
-            return BadRequest("Invalid mobile number for the provided username.");
+            return BadRequest(ApiResponse.Error("Invalid mobile number for the provided username."));
         }
 
         // Retrieve the user ID
         var userId = await _accountService.GetUserIdByEmailAsync(request.Email);
         if (string.IsNullOrEmpty(userId))
         {
-            return BadRequest("User ID not found.");
+            return BadRequest(ApiResponse.Error("User ID not found."));
         }
 
         // Send the user ID via email
         var emailBody = $"Your User ID is: {userId}";
         await _smtpService.SendEmailAsync(request.Email, "Your User ID", emailBody);
 
-        return Ok("Your User ID has been sent to your registered email.");
+        return Ok(ApiResponse.Success("Your User ID has been sent to your registered email."));
     }
  // Set New Password
    [HttpPost("set-new-password")]
@@ -147,10 +151,10 @@ public class AccountController : ControllerBase
         var result = await _accountService.SetNewPasswordAsync(request.UserId, request.NewPassword, request.ResetToken);
         if (!result)
         {
-            return BadRequest("Failed to set new password. Please ensure the reset token is valid.");
+            return BadRequest(ApiResponse.Error("Failed to set new password. Please ensure the reset token is valid."));
         }
 
-        return Ok("Password updated successfully.");
+        return Ok(ApiResponse.Success("Password updated successfully."));
     }
 
 }

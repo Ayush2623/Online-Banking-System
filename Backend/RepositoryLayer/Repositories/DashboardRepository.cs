@@ -79,6 +79,24 @@ public class DashboardRepository : IDashboardRepository
                 .ToListAsync();
         }
 
+        public async Task<List<Transaction>> GetAllTransactionsAsync(long accountNumber)
+        {
+            return await _context.Transactions
+                .Where(t => t.FromAccountNumber == accountNumber || t.ToAccountNumber == accountNumber)
+                .OrderByDescending(t => t.TransactionDate)
+                .Select(t => new Transaction
+                {
+                    TransactionId = t.TransactionId,
+                    FromAccountNumber = t.FromAccountNumber,
+                    ToAccountNumber = t.ToAccountNumber,
+                    Amount = t.Amount,
+                    TransactionType = t.TransactionType,
+                    TransactionDate = t.TransactionDate,
+                    Remarks = t.Remarks
+                })
+                .ToListAsync();
+        }
+
         public async Task<bool> ChangePasswordAsync(long accountNumber, string oldPassword, string newPassword)
         {
             var accountNumberLong = accountNumber;

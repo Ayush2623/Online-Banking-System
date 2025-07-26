@@ -165,6 +165,9 @@ namespace RepositoryLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PayeeId"), 1L, 1);
 
+                    b.Property<long>("AccountNumber")
+                        .HasColumnType("bigint");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -181,7 +184,7 @@ namespace RepositoryLayer.Migrations
 
                     b.HasKey("PayeeId");
 
-                    b.HasIndex("PayeeAccountNumber");
+                    b.HasIndex("AccountNumber");
 
                     b.ToTable("Payees");
                 });
@@ -309,14 +312,14 @@ namespace RepositoryLayer.Migrations
 
             modelBuilder.Entity("ModelLayer.Models.Payee", b =>
                 {
-                    b.HasOne("ModelLayer.Models.Account", "AccountNumber")
+                    b.HasOne("ModelLayer.Models.Account", "Account")
                         .WithMany()
-                        .HasForeignKey("PayeeAccountNumber")
+                        .HasForeignKey("AccountNumber")
                         .HasPrincipalKey("AccountNumber")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("AccountNumber");
+                    b.Navigation("Account");
                 });
 
             modelBuilder.Entity("ModelLayer.Models.Transaction", b =>

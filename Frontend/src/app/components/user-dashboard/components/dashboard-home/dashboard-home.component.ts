@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Router } from '@angular/router';
-
+import { AuthService } from '../../../../services/auth.service';
+import { AccountService } from '../../../../services/account.service';
+import { DashboardService } from '../../../../services/dashboard.service';
+import { Account } from '../../../../models/account.models';
+import { DashboardData, Transaction } from '../../../../models/dashboard.models';
 
 @Component({
   selector: 'app-dashboard-home',
@@ -9,46 +12,123 @@ import { Router } from '@angular/router';
   styleUrls: ['./dashboard-home.component.scss']
 })
 export class DashboardHomeComponent implements OnInit {
-  accountDetails: any = null;
-  message = '';
+  currentUser: any;
+  accountDetails: Account | null = null;
+  dashboardData: DashboardData | null = null;
+  recentTransactions: Transaction[] = [];
+  isLoading: boolean = false;
+  error: string = '';
+  hasAccount: boolean = false;
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(
+    private authService: AuthService,
+    private accountService: AccountService,
+    private dashboardService: DashboardService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
-    const userId = localStorage.getItem('userId');
-    const token = localStorage.getItem('token');
+    this.currentUser = this.authService.getCurrentUser();
+    this.checkUserAccount();
+  }
 
-    if (!userId || !token) {
+  private checkUserAccount(): void {
+    const userId = this.authService.getUserId();
+    
+    if (!userId) {
       this.router.navigate(['/login']);
       return;
     }
 
-    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-
-    this.http.get<any>(`https://localhost:7119/api/Account/view-account/${userId}`, { headers }).subscribe({
-      next: (res) => {
-        if (res.accountNumber) {
-          localStorage.setItem('accountNumber', res.accountNumber);
-          this.fetchUserProfile(res.accountNumber, headers);
-        } else {
-          this.router.navigate(['/user-dashboard/open-account']);
-        }
+    this.isLoading = true;
+    this.accountService.viewAccountByUserId(userId).subscribe({
+      next: (account) => {
+        this.accountDetails = account;
+        this.hasAccount = true;
+        this.loadDashboardData(account.accountNumber);
       },
-      error: () => {
-        this.router.navigate(['/user-dashboard/open-account']);
+      error: (err) => {
+        this.isLoading = false;
+        console.log('Account loading error:', err);
+        if (err.status === 404 || err.status === 403 || 
+            (err.error?.message && err.error.message.includes('Account not found'))) {
+          // User doesn't have an account yet
+          this.hasAccount = false;
+        } else {
+          this.error = err?.error?.message || 'Failed to load account information. Please try again.';
+        }
       }
     });
   }
 
-  fetchUserProfile(accountNumber: string, headers: HttpHeaders): void {
-  const params = new HttpParams().set('accountNumber', accountNumber);
+  private loadDashboardData(accountNumber: string): void {
+    // Load dashboard data (user profile)
+    this.dashboardService.getDashboard(accountNumber).subscribe({
+      next: (data) => {
+        this.dashboardData = data;
+      },
+      error: (err) => {
+        console.error('Error loading dashboard data:', err);
+      }
+    });
 
-  this.http.get<any>(
-    'https://localhost:7119/api/Dashboard/dashboard',
-    { headers, params }
-  ).subscribe({
-    next: data => this.accountDetails = data,
-    error: err => this.message = 'Failed to load account details.'
-  });
-}
+    // Load account summary (balance + recent transactions)
+    this.dashboardService.getAccountSummary(accountNumber).subscribe({
+      next: (summary) => {
+        this.isLoading = false;
+        this.recentTransactions = summary.recentTransactions || [];
+      },
+      error: (err) => {
+        this.isLoading = false;
+        console.error('Error loading account summary:', err);
+      }
+    });
+  }
+
+  openAccount(): void {
+    this.router.navigate(['/userDashboard/open-account']);
+  }
+
+  viewAccountStatement(): void {
+    this.router.navigate(['/userDashboard/account-statement']);
+  }
+
+  transferFunds(): void {
+    this.router.navigate(['/userDashboard/fund-transfer']);
+  }
+
+  formatCurrency(amount: number): string {
+    return new Intl.NumberFormat('en-IN', {
+      style: 'currency',
+      currency: 'INR'
+    }).format(amount);
+  }
+
+  formatDate(dateString: string): string {
+    try {
+      return new Date(dateString).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+    } catch (error) {
+      return dateString;
+    }
+  }
+
+  getTransactionTypeClass(type: string): string {
+    return type === 'Credit' ? 'text-green-600' : 'text-red-600';
+  }
+
+  getTransactionIcon(type: string): string {
+    return type === 'Credit' 
+      ? 'M12 6v6m0 0v6m0-6h6m-6 0H6' 
+      : 'M20 12H4';
+  }
+
+  refreshData(): void {
+    this.checkUserAccount();
+  }
 }

@@ -1,59 +1,53 @@
-<nav *ngIf="isLoggedIn()" class="bg-gray-800 text-white">
-  <div class="container mx-auto flex items-center justify-between p-4 flex-wrap">
-    <!-- Logo -->
-    <div class="text-xl font-bold">Online Banking System</div>
-
-    <!-- Mobile Menu Button -->
+<nav *ngIf="isLoggedIn()" class="bg-gradient-to-r from-blue-800 via-blue-900 to-indigo-900 text-white shadow-lg backdrop-blur-sm">
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <!-- Logo with Animation -->
+    <div class="flex items-center space-x-3 animate-fade-in">
+      <div class="h-10 w-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center animate-pulse-slow">
+        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+        </svg>
+      </div>
+      <div class="text-xl font-bold bg-gradient-to-r from-blue-100 to-white bg-clip-text text-transparent">
+        SecureBank Pro
+      </div>
+    </div>
 
     <!-- Navigation Links -->
-    <ul 
-      [ngClass]="{
-        'flex flex-col w-full mt-4 md:mt-0 md:flex-row md:w-auto md:items-center md:gap-4': true
-
-      }"
-      class="text-sm"
-    >
+    <div class="flex items-center space-x-6">
       <!-- Admin Links -->
       <ng-container *ngIf="isAdmin()">
-        <li>
-          <a routerLink="/adminDashboard" routerLinkActive="underline font-semibold" class="hover:underline">
-            Admin Dashboard
-          </a>
-        </li>
+        <a routerLink="/adminDashboard" 
+           routerLinkActive="bg-blue-700" 
+           class="nav-link-modern group">
+          <svg class="h-5 w-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+          </svg>
+          Dashboard
+        </a>
       </ng-container>
 
       <!-- User Links -->
       <ng-container *ngIf="isUser()">
-        <li>
-          <a routerLink="/userDashboard" routerLinkActive="underline font-semibold" class="hover:underline">
-            User Dashboard
-          </a>
-        </li>
-        <li>
-          <a routerLink="/accountSummary" routerLinkActive="underline font-semibold" class="hover:underline">
-            Account Summary
-          </a>
-        </li>
-        <li>
-          <a routerLink="/accountDetails" routerLinkActive="underline font-semibold" class="hover:underline">
-            Account Details
-          </a>
-        </li>
-        <li>
-          <a routerLink="/accountStatement" routerLinkActive="underline font-semibold" class="hover:underline">
-            Account Statement
-          </a>
-        </li>
+        <a routerLink="/userDashboard" 
+           routerLinkActive="bg-blue-700" 
+           class="nav-link-modern group">
+          <svg class="h-5 w-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5a2 2 0 012-2h4a2 2 0 012 2v6H8V5z"></path>
+          </svg>
+          Dashboard
+        </a>
       </ng-container>
 
       <!-- Logout -->
-      <li>
-        <button 
-          (click)="logout()" 
-          class="bg-red-500 px-3 py-1 rounded hover:bg-red-600">
-          Logout
-        </button>
-      </li>
-    </ul>
+      <button 
+        (click)="logout()" 
+        class="logout-btn group flex items-center space-x-2 bg-red-500 hover:bg-red-600 px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+        <svg class="h-5 w-5 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+        </svg>
+        <span>Logout</span>
+      </button>
+    </div>
   </div>
 </nav>

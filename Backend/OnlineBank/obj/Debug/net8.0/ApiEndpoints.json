@@ -259,6 +259,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "OnlineBank.Controllers.DashboardController",
+    "Method": "GetAllTransactions",
+    "RelativePath": "api/Dashboard/transactions/{accountNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountNumber",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "OnlineBank.Controllers.FundTransferController",
     "Method": "AddPayee",
     "RelativePath": "api/FundTransfer/add-payee",
@@ -269,6 +285,22 @@
       {
         "Name": "payee",
         "Type": "ModelLayer.DTOs.PayeeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnlineBank.Controllers.FundTransferController",
+    "Method": "GetPayees",
+    "RelativePath": "api/FundTransfer/payees/{accountNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountNumber",
+        "Type": "System.Int64",
         "IsRequired": true
       }
     ],

@@ -76,3 +76,16 @@ C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\ModelLayer\obj\Debug
 C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\ModelLayer\obj\Debug\net8.0\refint\ModelLayer.dll
 C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\ModelLayer\obj\Debug\net8.0\ModelLayer.pdb
 C:\Users\tiwar\Downloads\caseStudy-main\OnlineBankingSystem\ModelLayer\obj\Debug\net8.0\ref\ModelLayer.dll
+C:\Workspace\Online-Banking-System\Backend\ModelLayer\bin\Debug\net8.0\ModelLayer.deps.json
+C:\Workspace\Online-Banking-System\Backend\ModelLayer\bin\Debug\net8.0\ModelLayer.dll
+C:\Workspace\Online-Banking-System\Backend\ModelLayer\bin\Debug\net8.0\ModelLayer.pdb
+C:\Workspace\Online-Banking-System\Backend\ModelLayer\obj\Debug\net8.0\ModelLayer.csproj.AssemblyReference.cache
+C:\Workspace\Online-Banking-System\Backend\ModelLayer\obj\Debug\net8.0\ModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\Online-Banking-System\Backend\ModelLayer\obj\Debug\net8.0\ModelLayer.AssemblyInfoInputs.cache
+C:\Workspace\Online-Banking-System\Backend\ModelLayer\obj\Debug\net8.0\ModelLayer.AssemblyInfo.cs
+C:\Workspace\Online-Banking-System\Backend\ModelLayer\obj\Debug\net8.0\ModelLayer.csproj.CoreCompileInputs.cache
+C:\Workspace\Online-Banking-System\Backend\ModelLayer\obj\Debug\net8.0\ModelLayer.sourcelink.json
+C:\Workspace\Online-Banking-System\Backend\ModelLayer\obj\Debug\net8.0\ModelLayer.dll
+C:\Workspace\Online-Banking-System\Backend\ModelLayer\obj\Debug\net8.0\refint\ModelLayer.dll
+C:\Workspace\Online-Banking-System\Backend\ModelLayer\obj\Debug\net8.0\ModelLayer.pdb
+C:\Workspace\Online-Banking-System\Backend\ModelLayer\obj\Debug\net8.0\ref\ModelLayer.dll

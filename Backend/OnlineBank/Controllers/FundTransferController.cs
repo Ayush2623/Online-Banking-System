@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using BussinessLayer.Interfaces;
 using ModelLayer.Models;
 using ModelLayer.DTOs;
+using System.Collections.Generic;
 
 namespace OnlineBank.Controllers
 {
@@ -23,16 +24,24 @@ namespace OnlineBank.Controllers
     {
         if (!ModelState.IsValid)
         {
-            return BadRequest(ModelState);
+            return BadRequest(ApiResponse.Error("Invalid data provided."));
         }
 
         var result = await _fundTransferService.AddPayeeAsync(payee);
         if (!result)
         {
-            return BadRequest("Failed to add payee.");
+            return BadRequest(ApiResponse.Error("Failed to add payee. Please check if the account number exists."));
         }
 
-        return Ok("Payee added successfully.");
+        return Ok(ApiResponse.Success("Payee added successfully."));
+    }
+    
+    // Get Payees by Account Number
+    [HttpGet("payees/{accountNumber}")]
+    public async Task<IActionResult> GetPayees(long accountNumber)
+    {
+        var payees = await _fundTransferService.GetPayeesByAccountNumberAsync(accountNumber);
+        return Ok(ApiResponse<List<Payee>>.SuccessResponse("Payees retrieved successfully.", payees));
     }
     
     // Fund Transfer
@@ -42,10 +51,10 @@ namespace OnlineBank.Controllers
         var result = await _fundTransferService.TransferFundsAsync(request);
         if (!result)
         {
-            return BadRequest("Fund transfer failed. Please check the details.");
+            return BadRequest(ApiResponse.Error("Fund transfer failed. Please check the details."));
         }
 
-        return Ok("Funds transferred successfully.");
+        return Ok(ApiResponse.Success("Funds transferred successfully."));
     }
 }
 }

@@ -2,11 +2,10 @@ namespace ModelLayer.DTOs
 {
     public class PayeeDTO
     {
-        public int PayeeId { get; set; }
-        // public int UserId { get; set; }
+        // Remove PayeeId from DTO as it's not needed for adding payee
         public string PayeeName { get; set; }
         public long PayeeAccountNumber { get; set; }
         public string Nickname { get; set; }
-        // public DateTime CreatedAt { get; set; }
+        public long AccountNumber { get; set; } // Frontend sends this - user's account
     }
 }

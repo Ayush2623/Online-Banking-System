@@ -174,7 +174,9 @@ namespace BussinessLayer.Services
                 PermanentAddress = pa.PermanentAddress,
                 OccupationDetails = pa.OccupationDetails,
                 AccountType = pa.AccountType,
-                Balance = pa. Balance,
+                Balance = pa.Balance,
+                Status = pa.Status,
+                CreatedAt = pa.CreatedAt,
                 IsNetBankingEnabled = pa.IsNetBankingEnabled
             }).ToList();
         }

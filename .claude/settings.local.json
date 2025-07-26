@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ide__getDiagnostics",
+      "Bash(npm run build:*)",
+      "Bash(npx ng:*)",
+      "Bash(rm:*)",
+      "Bash(timeout 10s npm start)",
+      "Bash(dotnet build:*)",
+      "Bash(dotnet ef migrations add:*)",
+      "Bash(ls:*)",
+      "Bash(dotnet ef database update:*)",
+      "Bash(dotnet clean:*)",
+      "Bash(sqlcmd:*)"
+    ],
+    "deny": []
+  }
+}

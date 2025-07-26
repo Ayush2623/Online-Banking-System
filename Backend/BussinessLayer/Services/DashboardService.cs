@@ -30,6 +30,12 @@ public class DashboardService : IDashboardService
         {
             return await _dashboardRepository.GetAccountStatementAsync(accountNumber, startDate, endDate);
         }
+
+        public async Task<List<Transaction>> GetAllTransactionsAsync(long accountNumber)
+        {
+            return await _dashboardRepository.GetAllTransactionsAsync(accountNumber);
+        }
+
         public async Task<bool> ChangePasswordAsync(long accountNumber, string oldPassword, string newPassword)
         {
             return await _dashboardRepository.ChangePasswordAsync(accountNumber, oldPassword, newPassword);

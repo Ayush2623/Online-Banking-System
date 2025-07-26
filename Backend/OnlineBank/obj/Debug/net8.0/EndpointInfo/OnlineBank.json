@@ -395,6 +395,29 @@
         }
       }
     },
+    "/api/Dashboard/transactions/{accountNumber}": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "parameters": [
+          {
+            "name": "accountNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Dashboard/change-password": {
       "post": {
         "tags": [
@@ -462,6 +485,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FundTransfer/payees/{accountNumber}": {
+      "get": {
+        "tags": [
+          "FundTransfer"
+        ],
+        "parameters": [
+          {
+            "name": "accountNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -748,10 +794,6 @@
       "PayeeDTO": {
         "type": "object",
         "properties": {
-          "payeeId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "payeeName": {
             "type": "string",
             "nullable": true
@@ -763,6 +805,10 @@
           "nickname": {
             "type": "string",
             "nullable": true
+          },
+          "accountNumber": {
+            "type": "integer",
+            "format": "int64"
           }
         },
         "additionalProperties": false

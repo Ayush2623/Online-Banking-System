@@ -37,5 +37,11 @@ namespace RepositoryLayer.Repositories
         {
             return await _context.NetBankings.FirstOrDefaultAsync(nb => nb.AccountNumber == accountNumber);
         }
+
+        public async Task<bool> UpdateAccountAsync(Account account)
+        {
+            _context.Accounts.Update(account);
+            return await _context.SaveChangesAsync() > 0;
+        }
     }
 }
